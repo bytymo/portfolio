@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.map {
+  display: block;
+}

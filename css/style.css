@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Major+Mono+Display&family=Ubuntu:wght@300&display=swap');
+
+/* Color Scheme */
+.light {
+  background: #1b73d3;
+}
+
+.dark {
+  background: #010079;
+}
+
+.font-light {
+  color: #d5ad36;
+}
+
+.font-altLight {
+  color: #1b73d3;
+}
+
+.font-dark {
+  color: #cd9703;
+}
+
+.font-altDark {
+  color: #010079;
+}
+
+/* General */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Lora, Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: "Major Mono Display";
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+nav ul {
+  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 0px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.navbar a {
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  background: #1b73d3;
+  border-bottom: #cd9703 2px solid;
+}
+
+.navbar ul {
+  display: block;
+  text-align: center;
+}
+
+/* Image */
+
+.image img {
+  width: 100%;
+  display: block;
+}
+
+/* Sections */
+
+section {
+  padding: 20px 10px;
+}
+
+.map {
+  margin: 5em auto;
+  width: fit-content;
+  display: none;
+}
+
+/* Footer */
+footer {
+  font-size: x-small;
+  text-align: center
+}
