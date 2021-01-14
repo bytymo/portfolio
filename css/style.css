@@ -104,5 +104,6 @@ section {
 /* Footer */
 footer {
   font-size: x-small;
-  text-align: center
+  text-align: center;
+  padding: 20px 0;
 }
