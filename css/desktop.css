@@ -116,7 +116,7 @@ figure:hover figcaption {
 
 .flex-columns .row {
   display: flex;
-  background: url("/images/statue2.jpg") center center/cover;
+  background: url(../images/statue2.jpg) center center/cover;
   padding: 50px 0;
   margin-top: 20px;
 }
