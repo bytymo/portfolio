@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.navbar a:hover {
+  color: #d5ad36;
+  border-bottom: #d5ad36 2px solid;
+}
+
 /* Main :: General */
 
 section h2{

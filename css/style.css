@@ -89,18 +89,13 @@ header {
   z-index: 2;
 }
 
-.navbar.top { background-color: rgba(255,255,255,0);transition: 2s ease 0s;
+.navbar.top {
+  background-color: rgba(255,255,255,0);transition: 2s ease 0s;
 }
 
 .navbar a {
   padding: 10px 20px;
   margin: 0 5px;
-}
-
-.navbar a:hover {
-  /* background: #1b73d3; */
-  color: #d5ad36;
-  border-bottom: #d5ad36 2px solid;
 }
 
 .navbar ul {
@@ -142,6 +137,7 @@ section p {
 #about .definitions {
   display: block;
   margin-top: 10px;
+  padding: 0 20px;
 }
 
 #about .item {
