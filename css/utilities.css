@@ -1,0 +1,107 @@
+/*
+Color Palette:
+
+light gold: #d5ad36
+dark gold: #8e793e
+dark grey: #333333
+light grey: #eaeaea
+*/
+
+/* Color Scheme */
+.text-primary {
+  color: #333;
+}
+
+.text-secondary {
+  color: #eaeaea;
+}
+
+.text-gold {
+  color: #d5ad36;
+}
+
+/* Horizontal Rules */
+
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #eaeaea, #d5ad36, #eaeaea);
+}
+
+/* FlexColumns */
+.flex-columns .row {
+  display: block;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .col1,
+.flex-columns .column .col2 {
+  height: 100%;
+}
+
+/* Fav Icons */
+.icons {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 20px 30px 0;
+  color: #eaeaea;
+}
+
+.fas {
+  padding-bottom: 15px;
+}
+
+.contact-icons{
+  display: block;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contact-icons .icons {
+  color: #333;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-icons i {
+  font-size: 30px;
+}
+
+.contact-icons .icons p {
+  text-align: center;
+}
+
+/* Disclaimer */
+
+.disclaimer {
+  padding: 5px;
+  font-size:x-small;
+  border: none;
+  /* background: #333; */
+  /* color: #d5ad36; */
+  opacity: 0.7;
+  text-align: start;
+}
+
+.disclaimer a {
+  border: none;
+  /* color: #d5ad36; */
+}
+
+.disclaimer a:hover {
+  background: none;
+}
+
+/* Contact Links */
+.contact-link {
+  color: #333;
+  text-decoration: none;
+}

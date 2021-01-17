@@ -1,13 +1,159 @@
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  height: 70px;
 }
 
 .navbar ul {
   display: flex;
 }
 
-.map {
-  display: block;
+/* Main :: General */
+
+section h2{
+  padding-top: 80px;
+}
+
+/* About Me */
+
+#about .definitions {
+  display: flex;
+  width: 100%;
+}
+
+#about .item {
+  width: 100px;
+  padding: 15px;
+}
+
+#about .item + #about .item {
+  margin-left: 2%;
+}
+
+.aboutme {
+  display: flex;
+  margin-top: 20px;
+}
+
+.aboutme .col {
+  top: 0;
+}
+
+.aboutme .col .profile {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+}
+
+.aboutme .col .profile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.col + .col {
+  margin-left: 2%;
+}
+
+.profile figcaption {
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: none; 
+}
+
+.aboutme .col:last-child{
+  order: -1;
+  flex-grow: 1;
+
+}
+
+/* Portfolio */
+
+.portfolio-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+figure {
+  flex-grow: 1;
+  height: 250px;
+  width: 250px;
+}
+
+figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+figure + figure {
+  margin-left: 1%;
+}
+
+figcaption{
+  bottom: -30%;
+  -webkit-transition: all 0.6s ease; 
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  bottom: 0;
+}
+
+/* Contact Form */
+
+.disclaimer {
+  background: #333;
+  color: #d5ad36;
+  text-align:left;
+}
+
+.disclaimer a {
+  color: #d5ad36;
+}
+
+.flex-columns .row {
+  display: flex;
+  background: url("/images/statue2.jpg") center center/cover;
+  padding: 50px 0;
+  margin-top: 20px;
+}
+
+form > * {
+  border: none;
+  font-size: medium;
+}
+
+.btn {
+  background: transparent;
+  color:#eaeaea
+}
+
+.btn:hover {
+  background: #d5ad36;
+  color: #eaeaea;
+}
+
+.flex-columns .column:last-child{
+  order: -1;
+}
+
+.contact-icons{
+  display: flex;
+  padding-right: 0px;
+}
+
+.icons:last-child{
+  padding-right: 0;
+}
+
+.contact-link:hover {
+  color: #d5ad36;
+}
+
+/* Footer */
+.socialmedia .icons:hover{
+  color: #d5ad36;
 }

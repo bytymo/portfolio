@@ -4,54 +4,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 769px)">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <title>Byron Mosley</title>
 </head>
-<body>
-  <header id="home">
-    <div class="navbar dark">
-      <h1 class="font-light"><span class="font-altLight">B</span>yron Mosley</h1>
+<body id="home">
+  <header id="hero">
+
+    <div class="video">
+      <video src="images/glitch.mp4" autoplay="true" loop="true"></video>
+    </div>
+    
+    <div id='navbar' class="navbar top">
+      <h1 class="text-secondary">
+        <span class="text-gold">B</span>yRon <span class="text-gold">M</span>osley
+      </h1>
       <nav>
         <ul>
-          <li><a href="#home" class="font-light">Home</a></li>
-          <li><a href="#about" class="font-light">About</a></li>
-          <li><a href="#portfolio" class="font-light">Portfolio</a></li>
-          <li><a href="#contact" class="font-light">Contact</a></li>
+          <li><a href="#home" class="text-secondary">Home</a></li>
+          <li><a href="#about" class="text-secondary">About</a></li>
+          <li><a href="#portfolio" class="text-secondary">Portfolio</a></li>
+          <li><a href="#contact" class="text-secondary">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="image">
-      <img src="images/pexels-negative-space-34580.jpg" alt="minimalist deskspace with laptop, phone, and journal">
-    </div>
   </header>
 
-  <main>
-    <section id="about" class="light font-dark">
-      <h2>Hello, my name is Byron. I am a Full-stack Developer in Tempe, AZ.</h2>
-  
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia eveniet nostrum possimus veniam vel repellat commodi, neque expedita. Atque sed quos porro ipsum, fuga quasi facilis nostrum voluptates necessitatibus consequatur eaque id repudiandae rem voluptate soluta! Atque voluptates maiores pariatur esse mollitia debitis quisquam quam facere accusantium. Aliquam perferendis modi dolor itaque libero ipsum non eius explicabo perspiciatis. Vel cum quisquam magni, beatae ipsum vitae veritatis fugit, nemo accusamus odit nihil iure consequuntur, officia rem et temporibus? Error quos incidunt modi numquam ut nostrum, optio porro perferendis ducimus rerum, sit, rem et quam ullam culpa libero non expedita eligendi!</p>
-    </section>
-  
-    <section id="portfolio" class="dark font-light">
-      <h2>Portfolio</h2>
-  
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente perferendis ea? Quod, qui rem. Repellendus debitis cumque sed eligendi facilis nisi, voluptatem ipsam impedit repudiandae in dignissimos inventore, autem, dolorem fuga necessitatibus ad eum optio? Nemo, dolor! Tempora reprehenderit officia ratione cupiditate sint, exercitationem esse est, quibusdam cum, ut minus voluptate. Tempora ipsam dolores explicabo repellendus odio ex unde a inventore voluptate? Voluptatibus ducimus, maxime, reprehenderit fugit suscipit dignissimos ratione possimus amet quam aperiam fuga sapiente illum in sequi nihil repellat, incidunt ullam. Optio molestiae voluptatum explicabo beatae cum deleniti reiciendis, nobis eveniet inventore et, consequuntur maiores perspiciatis repellendus.</p>
-    </section>
-  
-    <section id="contact" class="light font-dark">
-      <h2>Contact Me</h2>
+  <main class="text-primary">
 
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d99544.35255233193!2d-112.05797981669426!3d33.428367123771174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1603297012026!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- About -->
+    <section id="about">
+      <h2><span class="text-gold header-font">W</span>ho am I?</h2><hr>
+
+      <div class="definitions">
+        <div class="item">
+          <h3>de·vel·op</h3>
+          <h4>/dəˈveləp/</h4>
+          <h4>to grow or cause to grow and become more mature, advanced, or elaborate.</h4>
+        </div>
+
+        <div class="item">
+          <h3>de·sign</h3>
+          <h4>/dəˈzīn/</h4>
+          <h4>to decide upon the look and functioning of (a building, garment, or other object), by making a detailed drawing of it.</h4>
+        </div>
+      </div>
+        
+      <div class="aboutme">
+          <div class="col">
+              <figure class="profile">
+                <img src="images/profile.jpg" alt="profile of myself on a couch">
+                <figcaption class="signature">Byron Mosley</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+            <p>I am a full stack web developer and web designer based out of Phoenix, AZ. I work with the PERN stack, which relies heavily on JavaScript on both the front and back end.</p>
+            <p>Outside of the coding world, I also enjoy creating composite images in Photoshop, going out and taking photos in the city or in the wild, or finding some other artistic avenue to keep me going. I love discovering new musicians and genres, would love to be fluent in either the guitar or drums, and aspire to be a polyglot (being multilingual for the fun of it).</p>
+            <p>Some of the top items in my bucket list include skydiving (and eventually banzai skydiving), scuba diving a coral reef, publish my own novel, visit Japan, and learn to snowboard.</p>  
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2><span class="text-gold header-font">P</span>ortfolio</h2><hr>
+  
+      <div class="portfolio-grid">
+        <div class="item">
+          <figure>
+            <img src="images/statue3.jpg" alt="statue" class="portfolio-image">
+            <figcaption>TBD</figcaption>
+          </figure>
+        </div>
+        <hr>
+        <div class="item">
+          <figure>
+            <img src="images/statue4.jpg" alt="statue" class="portfolio-image">
+            <figcaption>TBD</figcaption>
+          </figure>
+        </div>
+        <hr>
+        <div class="item">
+          <figure>
+            <img src="images/statue5.jpg" alt="statue" class="portfolio-image">
+            <figcaption>TBD</figcaption>
+          </figure>
+        </div>
+        <hr>
+        <div class="item">
+          <figure>
+            <img src="images/statue6.jpg" alt="statue" class="portfolio-image">
+            <figcaption>TBD</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Contact Me -->
+    <section id="contact" class="flex-columns">
+      <h2><span class="text-gold header-font">C</span>ontact Me</h2><hr>
+      <div class="row">
+        <div class="column">
+          <div class="col1">
+            <!-- empty -->
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="col2">
+            <!-- <img src="images/statue1.jpg" alt="black and white statue of an angel holding a staff"> -->
+            <form action="GET">
+              <h3>Looking for a quote? Wanting to collaborate? Or simply wishing to say hello? Fill out the form below!</h3>
+
+              <input type="text" name="name" id="name" placeholder="  Name">
+              <input type="email" name="email" id="email" placeholder="  Email">
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="  Message"></textarea>
+              <p class="disclaimer">*Form currently under construction. Content will not be saved nor sent. For the time being, please email <a href="mailto:mosleyb91@gmail.com">mosleyb91@gmail.com</a></p>
+
+              <a href="#" class="btn"><i class="fas fa-chevron-right"></i> Submit</a>
+            </form>
+          </div>
+        </div>
       </div>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sed veniam dicta exercitationem, vel cum asperiores soluta tempora qui quos accusamus culpa sequi, praesentium vitae optio minima harum numquam id sapiente iusto labore quod, maxime dolores? Odit assumenda corporis, sed porro possimus ab, enim veniam molestiae officia, voluptatum quis expedita illum quam minima? Quod modi veritatis, quis provident repellat, illo sed eaque placeat sit nostrum vero cumque praesentium harum. Aliquid atque explicabo ex similique minus, maxime voluptate saepe voluptas veritatis nesciunt perferendis quasi ducimus natus totam voluptatibus nam hic provident at! Iste ullam repudiandae numquam consectetur pariatur porro alias! Facilis.</p>
+      <div class="contact-icons">
+        <!-- Phone -->
+        <div class="icons">
+          <a class="contact-link" href="tel:+5203443681"><i class="fas fa-phone-alt"></i><br>(520) 344-3681</a>
+        </div>
+        <!-- Email -->
+        <div class="icons">
+          <a class="contact-link" href="mailto:mosleyb91@gmail.com"><i class="fas fa-envelope"></i><br>mosleyb91@gmail.com</a>
+        </div>
+        <!-- Location -->
+        <div class="icons">
+          <a class="contact-link" href="https://www.google.com/maps/dir//Phoenix,+AZ/@33.6054149,-112.125051,10z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872b12ed50a179cb:0x8c69c7f8354a1bac!3e0?hl=en" target="blank"><i class="fas fa-map-marker-alt"></i><br>Phoenix, AZ</a>
+        </div>
+      </div>
+      
     </section>
   </main>
 
-  <footer class="dark font-light">
+  <!-- Footer -->
+  <footer class="text-primary">
+    <p class="text-gold initials">BM</p>
+    <div class="socialmedia">
+      <!-- GitHub -->
+      <a class="icons" href="https://github.com/bytymo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      <!-- LinkedIn -->
+      <a class="icons" href="https://www.linkedin.com/in/byron-mosley/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Spotify -->
+      <a class="icons" href="https://open.spotify.com/user/i25kqerpk6ch0w70tt6rnrxje" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+    </div>
     <p>&copy Copyright Byron Mosley 2021. All Rights Reserved.</p>
   </footer>
-  
+  <script src="/js/script.js"></script>
 </body>
 </html>

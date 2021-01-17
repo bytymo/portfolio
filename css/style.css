@@ -1,29 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Major+Mono+Display&family=Ubuntu:wght@300&display=swap');
 
-/* Color Scheme */
-.light {
-  background: #1b73d3;
-}
-
-.dark {
-  background: #010079;
-}
-
-.font-light {
-  color: #d5ad36;
-}
-
-.font-altLight {
-  color: #1b73d3;
-}
-
-.font-dark {
-  color: #cd9703;
-}
-
-.font-altDark {
-  color: #010079;
-}
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
 /* General */
 * {
@@ -34,10 +11,19 @@
 
 body {
   font-family: Lora, Georgia, 'Times New Roman', Times, serif;
+  background: #eaeaea;
   line-height: 1.6;
 }
 
-h1 {
+/* H tags and paragraph tags */
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, .header-font {
   font-family: "Major Mono Display";
 }
 
@@ -45,6 +31,16 @@ h2 {
   font-size: 2em;
   text-align: center;
 }
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Nav */
 
 nav ul {
   font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,16 +51,46 @@ nav ul li a{
   text-decoration: none;
 }
 
+/* Header */
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Navbar */
 
 .navbar {
+  position: absolute;
   display: block;
   align-items: center;
   justify-content: center;
+  background: #333;
   width: 100%;
   top: 0px;
   padding: 0 30px;
   text-align: center;
+  z-index: 2;
+}
+
+.navbar.top {
+  background: transparent;
 }
 
 .navbar a {
@@ -73,8 +99,9 @@ nav ul li a{
 }
 
 .navbar a:hover {
-  background: #1b73d3;
-  border-bottom: #cd9703 2px solid;
+  /* background: #1b73d3; */
+  color: #d5ad36;
+  border-bottom: #d5ad36 2px solid;
 }
 
 .navbar ul {
@@ -82,23 +109,146 @@ nav ul li a{
   text-align: center;
 }
 
-/* Image */
-
-.image img {
-  width: 100%;
-  display: block;
-}
-
 /* Sections */
 
-section {
-  padding: 20px 10px;
+section:last-child {
+  border-bottom: #d5ad36 2px solid;
 }
 
-.map {
-  margin: 5em auto;
-  width: fit-content;
-  display: none;
+section h2{
+  padding-top: 10px;
+}
+
+section p {
+  text-align: justify;
+  padding: 20px;
+}
+
+/* Section :: About Me */
+
+.signature {
+  font-family: "Homemade Apple";
+}
+
+.aboutme {
+  padding-top: 30px;
+
+}
+
+.aboutme p {
+  margin: 0;
+  padding: 0 20px;
+}
+
+#about .definitions {
+  display: block;
+  margin-top: 10px;
+}
+
+#about .item {
+  display: block;
+  flex-grow: 1;
+  height: 100px;
+  margin: 15px 0;
+}
+
+#about .item h3, #about .item h4{
+  font-size: 1.2rem;
+}
+
+#about .item h3{
+  font-size: 1.5rem;
+}
+
+/* Section :: Portfolio */
+.portfolio-grid {
+  display: block;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.item{
+  display: flex;
+}
+
+figure { 
+  display: block; 
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
+
+figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+figcaption { 
+  position: absolute;
+  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  background: rgba(213, 173, 54, 0.75); 
+  color: #eaeaea; 
+  padding: 10px 20px; 
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Section :: Contact */
+
+.profile figcaption {
+  background-color: #d5ad36;
+  color: #333;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin: 5px;
+  border-radius: 5px;
+  background: #eaeaea;
+  color: #333;
+  border: #333 1px solid;
+}
+
+form h3 {
+  border: none;
+  background: transparent;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+.btn {
+  text-decoration: none;
+  background: transparent;
+  border: #d5ad36 1px solid;
+  color: #d5ad36;
+  padding: 3px;
+  align-self: flex-start;
+}
+
+.btn i {
+  padding: 0;
+  margin: 0;
+}
+
+form textarea {
+  resize: none;
+}
+
+.contact-icons{
+  padding-top: 50px;
+
 }
 
 /* Footer */
@@ -106,4 +256,14 @@ footer {
   font-size: x-small;
   text-align: center;
   padding: 20px 0;
+  background: #333;
+}
+
+footer p {
+  color: #eaeaea;
+}
+
+.initials {
+  font-family: "Major Mono Display";
+  font-size: 32px;
 }
