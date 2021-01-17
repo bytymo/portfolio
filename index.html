@@ -12,11 +12,9 @@
 <body id="home">
   <header id="hero">
 
-    <div class="video">
-      <video src="/images/glitch.mp4" autoplay loop></video>
-    </div>
     
-    <div id='navbar' class="navbar top">
+    
+    <div id='navbar' class="navbar">
       <h1 class="text-secondary">
         <span class="text-gold">B</span>yRon <span class="text-gold">M</span>osley
       </h1>
@@ -28,6 +26,10 @@
           <li><a href="#contact" class="text-secondary">Contact</a></li>
         </ul>
       </nav>
+    </div>
+
+    <div class="video">
+      <!-- <video src="/images/glitch.mp4" autoplay loop></video> -->
     </div>
   </header>
 
@@ -159,6 +161,12 @@
     </div>
     <p>&copy; Copyright Byron Mosley 2021. All Rights Reserved.</p>
   </footer>
-  <script src="/js/script.js"></script>
+  <script>
+    const navbar = document.getElementById('navbar');
+
+    window.onscroll = function() {
+  window.pageYOffset > 600 ? navbar.classList.remove('top') : navbar.classList.add('top');
+}
+  </script>
 </body>
 </html>
