@@ -93,7 +93,7 @@ hr {
 
 .disclaimer a {
   border: none;
-  /* color: #d5ad36; */
+  color: #333;
 }
 
 .disclaimer a:hover {
