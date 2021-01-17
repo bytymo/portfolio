@@ -65,7 +65,7 @@ section h2{
 .profile figcaption {
   bottom: 0;
   width: 100%;
-  -webkit-transition: none; 
+  transition: none; 
 }
 
 .aboutme .col:last-child{
@@ -99,7 +99,7 @@ figure + figure {
 
 figcaption{
   bottom: -30%;
-  -webkit-transition: all 0.6s ease; 
+  transition: all 0.6s ease; 
 }
 
 figure:hover figcaption {
