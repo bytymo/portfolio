@@ -13,7 +13,7 @@
   <header id="hero">
 
     <div class="video">
-      <video loop autoplay>
+      <video loop="loop" autoplay="autoplay" preload="auto">
         <source src="/images/glitch.mp4" type="video/mp4">
           Your browser does not support the video.
       </video>
@@ -167,8 +167,8 @@
     const navbar = document.getElementById('navbar');
 
     window.onscroll = function() {
-  window.pageYOffset > 600 ? navbar.classList.remove('top') : navbar.classList.add('top');
-}
+      window.pageYOffset > 600 ? navbar.classList.remove('top') : navbar.classList.add('top');
+    }
   </script>
 </body>
 </html>
