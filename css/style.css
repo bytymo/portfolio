@@ -56,9 +56,8 @@ nav ul li a{
 header {
   height: 100vh;
   position: relative;
-  background: url(../images/glitch.mp4) center center/cover;
 }
-/* 
+
 .video {
   position: absolute;
   top: 0;
@@ -73,7 +72,7 @@ header {
   height: 100%;
   object-fit: cover;
 }
- */
+
 /* Navbar */
 
 .navbar {
