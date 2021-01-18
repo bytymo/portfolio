@@ -12,6 +12,8 @@
 body {
   background: #eaeaea;
   line-height: 1.6;
+  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 /* H tags and paragraph tags */
@@ -19,7 +21,6 @@ body {
 h1, h2, h3, h4, p {
   font-weight: 300;
   line-height: 1.2;
-  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1, .header-font {
@@ -33,7 +34,7 @@ h2 {
 
 p {
   margin: 10px 0;
-  padding: 10px o;
+  padding: 10px 0;
 }
 
 img {
@@ -43,7 +44,6 @@ img {
 /* Nav */
 
 nav ul {
-  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   list-style: none;
 }
 
@@ -138,14 +138,21 @@ section p {
 
 #about .definitions {
   display: block;
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 0 20px;
+}
+
+#about .definitions .item {
+  border: #d5ad36 3px double;
+}
+
+#about .definitions .definition-item {
+  padding: 10px;
 }
 
 #about .item {
   display: block;
   flex-grow: 1;
-  height: 100px;
   margin: 15px 0;
 }
 
@@ -184,7 +191,6 @@ figure img {
 
 figcaption { 
   position: absolute;
-  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   background: rgba(213, 173, 54, 0.75); 
   color: #eaeaea; 

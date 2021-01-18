@@ -34,7 +34,7 @@ section h2{
   padding: 15px;
 }
 
-#about .item + #about .item {
+#about .item + .item {
   margin-left: 2%;
 }
 
