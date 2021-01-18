@@ -70,7 +70,7 @@ nav{
   right: 0;
   width: 30px;
   height: 30px;
-  background: url(/images/menu.png) no-repeat center;
+  background: url(images/menu.png) no-repeat center;
   background-size: 30px;
   margin: 5px 10px;
   z-index: 100;
@@ -79,7 +79,7 @@ nav{
 }
 
 .toggle.active {
-  background: url(/images/close.png);
+  background: url(images/close.png);
   background-size: 30px;
   position: fixed;
   top: 0;
