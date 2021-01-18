@@ -79,7 +79,7 @@ nav{
 }
 
 .toggle.active {
-  background: url(../images/close.png);
+  background: url(../images/close.png) no-repeat center;
   background-size: 30px;
   position: fixed;
   top: 0;
