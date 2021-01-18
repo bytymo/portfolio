@@ -20,10 +20,10 @@
       </h1>
       <nav class="menu">
         <ul>
-          <li><a href="#home" class="text-secondary">Home</a></li>
-          <li><a href="#about" class="text-secondary">About</a></li>
-          <li><a href="#portfolio" class="text-secondary">Portfolio</a></li>
-          <li><a href="#contact" class="text-secondary">Contact</a></li>
+          <li><a href="#home" class="text-secondary" onclick="removeActive()">Home</a></li>
+          <li><a href="#about" class="text-secondary" onclick="removeActive()">About</a></li>
+          <li><a href="#portfolio" class="close-menu text-secondary" onclick="removeActive()">Portfolio</a></li>
+          <li><a href="#contact" class="close-menu text-secondary" onclick="removeActive()">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -34,7 +34,7 @@
     <!-- About -->
     <section id="about">
       <h2><span class="text-gold header-font">W</span>hat I do</h2><hr>
-
+      <div class="toggle"></div>
       <div class="definitions">
         <div class="item">
           <h3>de·vel·op·er</h3>
@@ -167,12 +167,6 @@
     </div>
     <p>&copy; Copyright Byron Mosley 2021. All Rights Reserved.</p>
   </footer>
-  <script>
-    const navbar = document.getElementById('navbar');
-
-    window.onscroll = function() {
-      window.pageYOffset > 600 ? navbar.classList.remove('top') : navbar.classList.add('top');
-    }
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

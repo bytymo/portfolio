@@ -1,10 +1,25 @@
+/* Menu */
+nav {
+  display: flex;
+  visibility: visible;
+}
+
+.toggle {
+  display: none;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   position: fixed;
   height: 70px;
-  transition: 2s ease 0s;
+  transition: 3s ease 0s;
+}
+
+.navbar.top {
+  transition: 0.5s ease 0s;
+
 }
 
 .navbar ul {
