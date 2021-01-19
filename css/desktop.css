@@ -14,12 +14,11 @@ nav {
   justify-content: space-between;
   position: fixed;
   height: 70px;
-  transition: 3s ease 0s;
+  transition: 0.5s ease 0s;
 }
 
 .navbar.top {
   transition: 0.5s ease 0s;
-
 }
 
 .navbar ul {
@@ -87,7 +86,6 @@ section h2{
 .aboutme .col:last-child{
   order: -1;
   flex-grow: 1;
-
 }
 
 /* Portfolio */
@@ -137,7 +135,7 @@ figure:hover figcaption {
 
 .flex-columns .row {
   display: flex;
-  background: url(../images/statue2.jpg) center center/cover;
+  background: url(../images/bg-contact.jpg) center center/cover;
   padding: 50px 0;
   margin-top: 20px;
 }
