@@ -298,7 +298,14 @@ form textarea {
 
 .contact-icons{
   padding-top: 50px;
+}
 
+a.icons {
+  padding-right: 10px;
+}
+
+a.icons:last-child{
+  padding-right: 0;
 }
 
 /* Footer */

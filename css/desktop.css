@@ -166,10 +166,6 @@ form > * {
   padding-right: 0px;
 }
 
-.icons:last-child{
-  padding-right: 0;
-}
-
 .contact-link:hover {
   color: #d5ad36;
 }
