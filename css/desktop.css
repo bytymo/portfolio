@@ -32,7 +32,7 @@ nav {
 
 /* Main :: General */
 
-section h2{
+section h2 {
   padding-top: 80px;
 }
 
@@ -80,10 +80,10 @@ section h2{
 .profile figcaption {
   bottom: 0;
   width: 100%;
-  transition: none; 
+  transition: none;
 }
 
-.aboutme .col:last-child{
+.aboutme .col:last-child {
   order: -1;
   flex-grow: 1;
 }
@@ -111,9 +111,9 @@ figure + figure {
   margin-left: 1%;
 }
 
-figcaption{
+figcaption {
   bottom: -30%;
-  transition: all 0.6s ease; 
+  transition: all 0.6s ease;
 }
 
 figure:hover figcaption {
@@ -122,16 +122,6 @@ figure:hover figcaption {
 }
 
 /* Contact Form */
-
-.disclaimer {
-  background: #333;
-  color: #d5ad36;
-  text-align:left;
-}
-
-.disclaimer a {
-  color: #d5ad36;
-}
 
 .flex-columns .row {
   display: flex;
@@ -147,7 +137,7 @@ form > * {
 
 .btn {
   background: transparent;
-  color:#eaeaea
+  color: #eaeaea;
 }
 
 .btn:hover {
@@ -155,11 +145,11 @@ form > * {
   color: #eaeaea;
 }
 
-.flex-columns .column:last-child{
+.flex-columns .column:last-child {
   order: -1;
 }
 
-.contact-icons{
+.contact-icons {
   display: flex;
   padding-right: 0px;
 }
@@ -169,6 +159,6 @@ form > * {
 }
 
 /* Footer */
-.socialmedia .icons:hover{
+.socialmedia .icons:hover {
   color: #d5ad36;
 }

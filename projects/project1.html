@@ -1,77 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/utilities.css">
-  <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 813px)">
-  <link rel="stylesheet" href="../css/projects.css">
-  <link rel="stylesheet" href="../css/projects-desk.css" media="screen and (min-width: 813px)">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-  <title>Project : Local Library - Admin</title>
-</head>
-<body id="home">
-  <header id="hero">
-
-    <div id='navbar' class="navbar top">
-      <h1 class="text-secondary">
-        <span class="text-gold">B</span>yRon <span class="text-gold">M</span>osley
-      </h1>
-      <nav class="menu">
-        <ul>
-          <li><a href="../index.html#home" class="text-secondary" onclick="removeActive()">Home</a></li>
-          <li><a href="../index.html#about" class="text-secondary" onclick="removeActive()">About</a></li>
-          <li><a href="../index.html#portfolio" class="text-secondary" onclick="removeActive()">Portfolio</a></li>
-          <li><a href="../index.html#contact" class="text-secondary" onclick="removeActive()">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="toggle"></div>
-  </header>
-
-  <main class="text-primary">
-    <!-- Title -->
-    <section class="project-page">
-      <h2><span class="text-gold header-font">L</span>ocal Library</h2><hr>
-
-      <div class="project-img">
-        <img src="../images/local-library.png" alt="statue">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link
+      rel="stylesheet"
+      href="../css/desktop.css"
+      media="screen and (min-width: 813px)"
+    />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link
+      rel="stylesheet"
+      href="../css/projects-desk.css"
+      media="screen and (min-width: 813px)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <title>Project : Local Library - Admin</title>
+  </head>
+  <body id="home">
+    <header id="hero">
+      <div id="navbar" class="navbar top">
+        <h1 class="text-secondary">
+          <span class="text-gold">B</span>yRon
+          <span class="text-gold">M</span>osley
+        </h1>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a
+                href="../index.html#home"
+                class="text-secondary"
+                onclick="removeActive()"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="../index.html#about"
+                class="text-secondary"
+                onclick="removeActive()"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="../index.html#portfolio"
+                class="text-secondary"
+                onclick="removeActive()"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="../index.html#contact"
+                class="text-secondary"
+                onclick="removeActive()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
+      <div class="toggle"></div>
+    </header>
 
-      <div class="stack">
-        <img src="../images/javascript.png" alt="javasript logo">
+    <main class="text-primary">
+      <!-- Title -->
+      <section class="project-page">
+        <h2><span class="text-gold header-font">L</span>ocal Library</h2>
+        <hr />
+
+        <div class="project-img">
+          <img src="../images/local-library.png" alt="statue" />
+        </div>
+
+        <div class="stack">
+          <img src="../images/javascript.png" alt="javasript logo" />
+        </div>
+
+        <div class="page-links">
+          <a
+            class="btn"
+            href="https://bytymo.github.io/project-local-library/public/index.html"
+            target="blank"
+            >Link to page</a
+          >
+
+          <a
+            class="btn"
+            href="https://github.com/bytymo/project-local-library"
+            target="blank"
+            >Link to GitHub</a
+          >
+        </div>
+
+        <div class="project-description">
+          <h3>Description:</h3>
+          <p>
+            A dummy website to mimic a library's administrative database. The
+            HTML and CSS were already provided, requiring only the JavaScript be
+            developed. The completed project provided a home page for general
+            statistics regarding rented books and popular categories. The "Stats
+            by Book" page provided a list of every book housed by the library,
+            with a history of recent borrowers, the author, genre, and if is is
+            currently returned or rented out. Finally, the "Stats by Account"
+            page listed every library member alphabetically by last name, with a
+            profile picture, general information about the member, as well as
+            how many total books have been borrowed by the member.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-primary">
+      <p class="text-gold initials">BM</p>
+      <div class="socialmedia">
+        <!-- GitHub -->
+        <a
+          class="icons"
+          href="https://github.com/bytymo"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i
+        ></a>
+        <!-- LinkedIn -->
+        <a
+          class="icons"
+          href="https://www.linkedin.com/in/byron-mosley/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Spotify -->
+        <a
+          class="icons"
+          href="https://open.spotify.com/user/i25kqerpk6ch0w70tt6rnrxje"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-spotify"></i
+        ></a>
       </div>
-
-      <div class="page-links">
-        <a class="btn" href="https://bytymo.github.io/project-local-library/public/index.html" target="blank">Link to page</a>
-
-        <a class="btn" href="https://github.com/bytymo/project-local-library" target="blank">Link to GitHub</a>
-      </div>
-
-      <div class="project-description">
-        <h3>Description:</h3>
-        <p>A dummy website to mimic a library's administrative database. The HTML and CSS were provided by the course, requiring only the JavaScript be submitted. The completed project provided a home page for general statistics regarding rented books and popular categories. The "Stats by Book" page provided a list of every book housed by the library, with a history of recent borrowers, the author, genre, and if is is currently returned or rented out. Finally, the "Stats by Account" page listed every library member alphabetically by last name, with a profile picture, general information about the emember, as well as how many total books have been borrowed by the member.</p>
-
-        <h3>Purpose:</h3>
-        <p>This project was designed to test my ability to create functions, higher order functions, various methods (such as find, filter, and map), and utilize string literals, among other learning objectives. I was to link the three databases (each styled as an object within a .js file) and output the results onto the web app. A total of 14 functions across 3 files were necessary to complete, with an additional helper function required to assist in at least one of the other functions.</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="text-primary">
-    <p class="text-gold initials">BM</p>
-    <div class="socialmedia">
-      <!-- GitHub -->
-      <a class="icons" href="https://github.com/bytymo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-      <!-- LinkedIn -->
-      <a class="icons" href="https://www.linkedin.com/in/byron-mosley/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-      <!-- Spotify -->
-      <a class="icons" href="https://open.spotify.com/user/i25kqerpk6ch0w70tt6rnrxje" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
-    </div>
-    <p>&copy; Copyright Byron Mosley 2021. All Rights Reserved.</p>
-  </footer>
-  <script src="../js/projects.js"></script>
-</body>
+      <p>&copy; Copyright Byron Mosley 2021. All Rights Reserved.</p>
+    </footer>
+    <script src="../js/projects.js"></script>
+  </body>
 </html>

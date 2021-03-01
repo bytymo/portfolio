@@ -1,177 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 813px)">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-  <title>Byron Mosley</title>
-</head>
-<body id="home">
-  <header id="hero">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/bm-logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link
+      rel="stylesheet"
+      href="css/desktop.css"
+      media="screen and (min-width: 813px)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <title>Byron Mosley</title>
+  </head>
+  <body id="home">
+    <header id="hero">
+      <video src="images/glitch.mp4" muted loop autoplay playsinline></video>
 
-    <video src="images/glitch.mp4" muted loop autoplay playsinline></video>  
-
-    <div id='navbar' class="navbar top">
-      <h1 class="text-secondary">
-        <span class="text-gold">B</span>yRon <span class="text-gold">M</span>osley
-      </h1>
-      <nav class="menu">
-        <ul>
-          <li><a href="#home" class="text-secondary" onclick="removeActive()">Home</a></li>
-          <li><a href="#about" class="text-secondary" onclick="removeActive()">About</a></li>
-          <li><a href="#portfolio" class="close-menu text-secondary" onclick="removeActive()">Portfolio</a></li>
-          <li><a href="#contact" class="close-menu text-secondary" onclick="removeActive()">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="toggle"></div>
-  </header>
-
-  <main class="text-primary">
-    <!-- About -->
-    <section id="about">
-      <h2><span class="text-gold header-font">W</span>ho I am</h2><hr>
-      <div class="definitions">
-        <div class="item">
-          <h3>de·vel·op·er</h3>
-          <div class="definition-item">
-            <h4>/dəˈveləpər/</h4>
-            <h4><em>a person or thing that develops or innovates; a person or company that creates new products, especially software, or devices.</em></h4>
-
-            <p>Full Stack Development concerns itself with both the front end and back end of web development. Using HTML, CSS, and Javascript for front end development with React, PostrgreSQL, and Express for back end development, I build fast, efficient websites.</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <h3>de·sign·er</h3>
-          <div class="definition-item">
-            <h4>/dəˈzīnər/</h4>
-            <h4><em>a person who plans the form, look, or workings of something before its being made or built, typically by drawing it in detail.</em></h4>
-
-            <p>It is my mission to provide the respect and attention the client deserves as well as understand the clients needs when designing the site, while respecting the clients time and budget.</p>
-          </div>
-        </div>
+      <div id="navbar" class="navbar top">
+        <h1 class="text-secondary">
+          <span class="text-gold">B</span>yRon
+          <span class="text-gold">M</span>osley
+        </h1>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#home" class="text-secondary" onclick="removeActive()"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="text-secondary" onclick="removeActive()"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="close-menu text-secondary"
+                onclick="removeActive()"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="close-menu text-secondary"
+                onclick="removeActive()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
+      <div class="toggle"></div>
+    </header>
 
-      <h2><span class="text-gold header-font">A</span>bout Me</h2><hr>
-        
-      <div class="aboutme">
-        <div class="col">
+    <main class="text-primary">
+      <!-- About -->
+      <section id="about">
+        <h2><span class="text-gold header-font">W</span>ho I am</h2>
+        <hr />
+        <div class="definitions">
+          <div class="item">
+            <h3>de·vel·op·er</h3>
+            <div class="definition-item">
+              <h4>/dəˈveləpər/</h4>
+              <h4>
+                <em
+                  >a person or thing that develops or innovates; a person or
+                  company that creates new products, especially software, or
+                  devices.</em
+                >
+              </h4>
+
+              <p>
+                Full Stack Development concerns itself with both the front end
+                and back end of web development. Using HTML, CSS, and Javascript
+                for front end development with React, PostrgreSQL, and Express
+                for back end development, I build fast, efficient websites.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <h3>de·sign·er</h3>
+            <div class="definition-item">
+              <h4>/dəˈzīnər/</h4>
+              <h4>
+                <em
+                  >a person who plans the form, look, or workings of something
+                  before its being made or built, typically by drawing it in
+                  detail.</em
+                >
+              </h4>
+
+              <p>
+                It is my mission to provide the respect and attention the client
+                deserves as well as understand the clients needs when designing
+                the site, while respecting the clients time and budget.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2><span class="text-gold header-font">A</span>bout Me</h2>
+        <hr />
+
+        <div class="aboutme">
+          <div class="col">
             <figure class="profile">
-              <img src="images/profile.jpg" alt="profile of myself on a couch">
+              <img
+                src="images/profile.jpg"
+                alt="profile of myself on a couch"
+              />
               <figcaption class="signature">Byron Mosley</figcaption>
             </figure>
+          </div>
+          <div class="col">
+            <p>
+              I am a full stack web developer and web designer based out of
+              Phoenix, AZ. I work with the PERN stack, which relies heavily on
+              JavaScript on both the front and back end. I strongly look forward
+              to working in a group of programmers so I may not only learn but
+              reinforce my understanding of code. Whether it be exploring my
+              artistic ability through web design or my critical thinking
+              analysis and testing my logic through web development, I am very
+              excited to connect with people and contribute to the growth of the
+              web.
+            </p>
+            <p>
+              Outside of the coding world, I also enjoy creating composite
+              images in Photoshop, going out and taking photos in the city or in
+              the wild, or finding some other artistic avenue to keep me going.
+              I love discovering new musicians and genres, would love to be
+              fluent in either the guitar or drums, and aspire to be a polyglot
+              (being multilingual for the fun of it). The top three languages at
+              this moment would be Japanese, German, and Spanish (in no
+              particular order).
+            </p>
+            <p>
+              Some of the top items on my bucket list include skydiving (and
+              eventually banzai skydiving), scuba diving a coral reef,
+              publishing my own novel, visiting Japan, and learning to
+              snowboard.
+            </p>
+          </div>
         </div>
-        <div class="col">
-          <p>I am a full stack web developer and web designer based out of Phoenix, AZ. I work with the PERN stack, which relies heavily on JavaScript on both the front and back end. I strongly look forward to working in a group of programmers so I may not only learn but reinforce my understanding of code. Whether it be exploring my artistic ability through web design or my critical thinking analysis and testing my logic through web development, I am very excited to connect with people and contribute to the growth of the web.</p>
-          <p>Outside of the coding world, I also enjoy creating composite images in Photoshop, going out and taking photos in the city or in the wild, or finding some other artistic avenue to keep me going. I love discovering new musicians and genres, would love to be fluent in either the guitar or drums, and aspire to be a polyglot (being multilingual for the fun of it). The top three languages at this moment would be Japanese, German, and Spanish (in no particular order).</p>
-          <p>Some of the top items on my bucket list include skydiving (and eventually banzai skydiving), scuba diving a coral reef, publishing my own novel, visiting Japan, and learning to snowboard.</p>  
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <h2><span class="text-gold header-font">P</span>ortfolio</h2>
+        <hr />
+
+        <div class="portfolio-grid">
+          <div class="item">
+            <figure>
+              <a href="projects/project1.html">
+                <img
+                  src="images/project1.jpg"
+                  alt="statue"
+                  class="portfolio-image"
+                />
+              </a>
+              <figcaption>Local Library - Admin</figcaption>
+            </figure>
+          </div>
+          <hr />
+          <div class="item">
+            <figure>
+              <a href="projects/project2.html">
+                <img
+                  src="images/project2.jpg"
+                  alt="statue"
+                  class="portfolio-image"
+                />
+              </a>
+              <figcaption>Decoder</figcaption>
+            </figure>
+          </div>
+          <hr />
+          <div class="item">
+            <figure>
+              <a href="projects/project3.html">
+                <img
+                  src="images/project3.jpg"
+                  alt="statue"
+                  class="portfolio-image"
+                />
+              </a>
+              <figcaption>Coming Soon</figcaption>
+            </figure>
+          </div>
+          <hr />
+          <div class="item">
+            <figure>
+              <a href="projects/project4.html">
+                <img
+                  src="images/project4.jpg"
+                  alt="statue"
+                  class="portfolio-image"
+                />
+              </a>
+              <figcaption>Coming Soon</figcaption>
+            </figure>
+          </div>
         </div>
-      </div>
-    </section>
-  
-    <!-- Portfolio -->
-    <section id="portfolio">
-      <h2><span class="text-gold header-font">P</span>ortfolio</h2><hr>
-  
-      <div class="portfolio-grid">
-        <div class="item">
-          <figure>
-            <a href="projects/project1.html">
-              <img src="images/project1.jpg" alt="statue" class="portfolio-image">
-            </a>
-            <figcaption>Local Library - Admin</figcaption>
-          </figure>
-        </div>
-        <hr>
-        <div class="item">
-          <figure>
-            <a href="projects/project2.html">
-              <img src="images/project2.jpg" alt="statue" class="portfolio-image">
-            </a>
-            <figcaption>Decoder</figcaption>
-          </figure>
-        </div>
-        <hr>
-        <div class="item">
-          <figure>
-            <a href="projects/project3.html">
-              <img src="images/project3.jpg" alt="statue" class="portfolio-image">
-            </a>
-            <figcaption>Coming Soon</figcaption>
-          </figure>
-        </div>
-        <hr>
-        <div class="item">
-          <figure>
-            <a href="projects/project4.html">
-              <img src="images/project4.jpg" alt="statue" class="portfolio-image">
-            </a>
-            <figcaption>Coming Soon</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Contact Me -->
-    <section id="contact" class="flex-columns">
-      <h2><span class="text-gold header-font">C</span>ontact Me</h2><hr>
-      <div class="row">
-        <div class="column">
-          <div class="col1">
-            <!-- empty -->
+      </section>
+
+      <!-- Contact Me -->
+      <section id="contact" class="flex-columns">
+        <h2><span class="text-gold header-font">C</span>ontact Me</h2>
+        <hr />
+        <div class="row">
+          <div class="column">
+            <div class="col1">
+              <!-- empty -->
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="col2">
+              <form
+                id="submitForm"
+                action="https://formspree.io/f/mpzobqor"
+                method="POST"
+              >
+                <h3>
+                  Looking for a quote? Wanting to collaborate? Or simply wishing
+                  to say hello? Fill out the form below!
+                </h3>
+
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="  Name"
+                  required
+                  minlength="2"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="  Email"
+                  required
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="  Message"
+                  required
+                ></textarea>
+                <!-- <p class="disclaimer">*Form currently under construction. Content will not be saved nor sent. For the time being, please email <a href="mailto:mosleyb91@gmail.com">mosleyb91@gmail.com</a></p> -->
+
+                <a
+                  href="javascript:{}"
+                  onclick="document.getElementById('submitForm').submit();"
+                  class="btn"
+                  ><i class="fas fa-chevron-right"></i> Submit</a
+                >
+              </form>
+            </div>
           </div>
         </div>
 
-        <div class="column">
-          <div class="col2">
-            <form id="submitForm" action="https://formspree.io/f/mpzobqor" method="POST">
-              <h3>Looking for a quote? Wanting to collaborate? Or simply wishing to say hello? Fill out the form below!</h3>
-
-              <input type="text" name="name" id="name" placeholder="  Name" required minlength="2">
-              <input type="email" name="email" id="email" placeholder="  Email" required>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="  Message" required></textarea>
-              <!-- <p class="disclaimer">*Form currently under construction. Content will not be saved nor sent. For the time being, please email <a href="mailto:mosleyb91@gmail.com">mosleyb91@gmail.com</a></p> -->
-
-              <a href="javascript:{}" onclick="document.getElementById('submitForm').submit();" class="btn"><i class="fas fa-chevron-right"></i> Submit</a>
-            </form>
+        <div class="contact-icons">
+          <!-- Phone -->
+          <div class="icons">
+            <a class="contact-link" href="tel:+15203443681"
+              ><i class="fas fa-phone-alt"></i><br />(520) 344-3681</a
+            >
+          </div>
+          <!-- Email -->
+          <div class="icons">
+            <a class="contact-link" href="mailto:mosleyb91@gmail.com"
+              ><i class="fas fa-envelope"></i><br />mosleyb91@gmail.com</a
+            >
+          </div>
+          <!-- Location -->
+          <div class="icons">
+            <a
+              class="contact-link"
+              href="https://www.google.com/maps/dir//Phoenix,+AZ/@33.6054149,-112.125051,10z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872b12ed50a179cb:0x8c69c7f8354a1bac!3e0?hl=en"
+              target="blank"
+              ><i class="fas fa-map-marker-alt"></i><br />Phoenix, AZ</a
+            >
           </div>
         </div>
-      </div>
+      </section>
+    </main>
 
-      <div class="contact-icons">
-        <!-- Phone -->
-        <div class="icons">
-          <a class="contact-link" href="tel:+15203443681"><i class="fas fa-phone-alt"></i><br>(520) 344-3681</a>
-        </div>
-        <!-- Email -->
-        <div class="icons">
-          <a class="contact-link" href="mailto:mosleyb91@gmail.com"><i class="fas fa-envelope"></i><br>mosleyb91@gmail.com</a>
-        </div>
-        <!-- Location -->
-        <div class="icons">
-          <a class="contact-link" href="https://www.google.com/maps/dir//Phoenix,+AZ/@33.6054149,-112.125051,10z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872b12ed50a179cb:0x8c69c7f8354a1bac!3e0?hl=en" target="blank"><i class="fas fa-map-marker-alt"></i><br>Phoenix, AZ</a>
-        </div>
+    <!-- Footer -->
+    <footer class="text-primary">
+      <p class="text-gold initials">BM</p>
+      <div class="socialmedia">
+        <!-- GitHub -->
+        <a
+          class="icons"
+          href="https://github.com/bytymo"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i
+        ></a>
+        <!-- LinkedIn -->
+        <a
+          class="icons"
+          href="https://www.linkedin.com/in/byron-mosley/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Spotify -->
+        <a
+          class="icons"
+          href="https://open.spotify.com/user/i25kqerpk6ch0w70tt6rnrxje"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-spotify"></i
+        ></a>
       </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="text-primary">
-    <p class="text-gold initials">BM</p>
-    <div class="socialmedia">
-      <!-- GitHub -->
-      <a class="icons" href="https://github.com/bytymo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-      <!-- LinkedIn -->
-      <a class="icons" href="https://www.linkedin.com/in/byron-mosley/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-      <!-- Spotify -->
-      <a class="icons" href="https://open.spotify.com/user/i25kqerpk6ch0w70tt6rnrxje" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
-    </div>
-    <p>&copy; Copyright Byron Mosley 2021. All Rights Reserved.</p>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+      <p>&copy; Copyright Byron Mosley 2021. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
