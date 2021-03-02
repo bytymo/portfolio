@@ -9,8 +9,15 @@
   margin: 0;
 }
 
+:root {
+  --light-gold: #d5ad36;
+  --dark-gold: #8e793e;
+  --light-grey: #eaeaea;
+  --dark-grey: #333333;
+}
+
 body {
-  background: #eaeaea;
+  background: var(--dark-grey);
   line-height: 1.6;
   font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -244,7 +251,7 @@ figcaption {
   position: absolute;
   font-size: 20px;
   background: rgba(213, 173, 54, 0.75);
-  color: #eaeaea;
+  color: var(--dark-grey);
   padding: 10px 20px;
   bottom: 0;
   width: 100%;
@@ -255,7 +262,7 @@ figcaption {
 
 .profile figcaption {
   background-color: #d5ad36;
-  color: #333;
+  color: var(--light-grey);
 }
 
 form {
@@ -270,9 +277,9 @@ form > * {
   font-size: large;
   margin: 5px;
   border-radius: 5px;
-  background: #eaeaea;
-  color: #333;
-  border: #333 1px solid;
+  background: var(--light-grey);
+  color: var(--dark-grey);
+  border: var(--dark-grey) 1px solid;
 }
 
 form h3 {
@@ -317,11 +324,11 @@ footer {
   font-size: x-small;
   text-align: center;
   padding: 20px 0;
-  background: #333;
+  background: var(--dark-grey);
 }
 
 footer p {
-  color: #eaeaea;
+  color: var(--light-grey);
 }
 
 .initials {
