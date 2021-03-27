@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/utilities.css" />
     <link
       rel="stylesheet"
@@ -15,61 +15,60 @@
       rel="stylesheet"
       href="../css/projects-desk.css"
       media="screen and (min-width: 813px)"
+    /> -->
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/newstyle.css" />
     <title>Project : Local Library - Admin</title>
   </head>
   <body id="home">
-    <header id="hero">
-      <div id="navbar" class="navbar top">
-        <h1 class="text-secondary">
-          <span class="text-gold">B</span>yRon
-          <span class="text-gold">M</span>osley
-        </h1>
-        <nav class="menu">
-          <ul>
-            <li>
-              <a
-                href="../index.html#home"
-                class="text-secondary"
-                onclick="removeActive()"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="../index.html#about"
-                class="text-secondary"
-                onclick="removeActive()"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="../index.html#portfolio"
-                class="text-secondary"
-                onclick="removeActive()"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a
-                href="../index.html#contact"
-                class="text-secondary"
-                onclick="removeActive()"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg fixed-top pt-0 mt-0" id="navbar">
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="overlay d-none d-lg-block"></div>
+
+      <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+        <h1 class="text-light name">ByRon <span class="gold">M</span>osley</h1>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+            <a class="nav-link gold" href="#home">Home</a>
+          </li>
+          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+            <a class="nav-link gold" href="#about">About</a>
+          </li>
+          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+            <a class="nav-link gold" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item pb-2" onclick="removeActive()">
+            <a class="nav-link gold" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-      <div class="toggle"></div>
-    </header>
+    </nav>
+
+    <div class="toggle d-lg-none"></div>
 
     <main class="text-primary">
       <!-- Title -->
@@ -78,23 +77,27 @@
         <hr />
 
         <div class="project-img">
-          <img src="../images/local-library.png" alt="statue" />
+          <img src="../images/github-finder.png" alt="statue" />
         </div>
 
-        <div class="stack">
-          <img src="../images/javascript.png" alt="javasript logo" />
+        <div class="stack w-100 d-block">
+          <img
+            src="../images/javascript.png"
+            alt="javasript logo"
+            class="float-right"
+          />
         </div>
 
-        <div class="page-links">
+        <div class="page-links d-block w-100">
           <a
-            class="btn"
+            class="btn btn-outline-warning float-left"
             href="https://bytymo.github.io/project-local-library/public/index.html"
             target="blank"
             >Link to page</a
           >
 
           <a
-            class="btn"
+            class="btn btn-outline-warning float-right"
             href="https://github.com/bytymo/project-local-library"
             target="blank"
             >Link to GitHub</a
