@@ -178,7 +178,7 @@
 
         <div class="card-deck row">
           <!-- Project 1 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
             <div
               class="card modalCard"
               data-toggle="modal"
@@ -196,114 +196,114 @@
                 </h5>
               </div>
             </div>
-          </div>
-          <!-- Project 1: Modal -->
-          <div
-            class="modal fade"
-            id="githubFinderModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="githubFinder"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content bg-light">
-                <div class="modal-header bg-dark">
-                  <h5 class="modal-title text-light" id="githubFinder">
-                    GITHUB FINDER
-                  </h5>
-                  <button
-                    type="button"
-                    class="close text-light"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body row">
-                  <img
-                    src="./images/github-finder.png"
-                    alt="github finder screenshot"
-                    class="w-100 m-2 col-12"
-                  />
+            <!-- Project 1: Modal -->
+            <div
+              class="modal fade"
+              id="githubFinderModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="githubFinder"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bg-light">
+                  <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-light" id="githubFinder">
+                      GITHUB FINDER
+                    </h5>
+                    <button
+                      type="button"
+                      class="close text-light"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img
+                      src="./images/github-finder.png"
+                      alt="github finder screenshot"
+                      class="w-100 m-2 col-12"
+                    />
 
-                  <!-- Tech Stack -->
-                  <div class="stack col-12 justify-content-end m-2">
-                    <img
-                      src="./images/netlify.png"
-                      alt="netlify logo"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/git.png"
-                      alt="git logo"
-                      class="float-right"
-                    />
-                    <img
-                      src="./images/bootstrap.png"
-                      alt="bootstrap logo"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/node-js.png"
-                      alt="node js logo"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/react-native.png"
-                      alt="react native logo"
-                      class="float-right mr-1"
-                    />
+                    <!-- Tech Stack -->
+                    <div class="stack col-12 justify-content-end m-2">
+                      <img
+                        src="./images/netlify.png"
+                        alt="netlify logo"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/git.png"
+                        alt="git logo"
+                        class="float-right"
+                      />
+                      <img
+                        src="./images/bootstrap.png"
+                        alt="bootstrap logo"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/node-js.png"
+                        alt="node js logo"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/react-native.png"
+                        alt="react native logo"
+                        class="float-right mr-1"
+                      />
+                    </div>
+                    <div class="col-12 text-justify text-dark">
+                      <p>
+                        Developed a front-end web app that allows the user to
+                        search for GitHub profiles based on their username.
+                      </p>
+                      <ul class="pl-4">
+                        <li>
+                          Built with functional components such as “useState”
+                          and “useEffect”. Uses app level state with Context
+                          API, useReducer hook, and useContext hook
+                        </li>
+                        <li>
+                          Uses GitHub API to fetch GitHub profiles while
+                          limiting the number of profiles to thirty on the page.
+                          Each profile page pulls info (i.e. the user’s display
+                          name, bio, username, etc.) as well as data such as
+                          number of followers and public repos
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="col-12 text-justify text-dark">
-                    <p>
-                      Developed a front-end web app that allows the user to
-                      search for GitHub profiles based on their username.
-                    </p>
-                    <ul class="pl-4">
-                      <li>
-                        Built with functional components such as “useState” and
-                        “useEffect”. Uses app level state with Context API,
-                        useReducer hook, and useContext hook
-                      </li>
-                      <li>
-                        Uses GitHub API to fetch GitHub profiles while limiting
-                        the number of profiles to thirty on the page. Each
-                        profile page pulls info (i.e. the user’s display name,
-                        bio, username, etc.) as well as data such as number of
-                        followers and public repos
-                      </li>
-                    </ul>
+                  <div class="modal-footer bg-dark">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning mr-auto"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="https://btm-githubfinder.netlify.app/"
+                      target="blank"
+                      class="btn btn-outline-light"
+                      >Link</a
+                    >
+                    <a
+                      href="https://github.com/bytymo/github-finder"
+                      target="blank"
+                      class="btn btn-outline-light"
+                      >Github</a
+                    >
                   </div>
-                </div>
-                <div class="modal-footer bg-dark">
-                  <button
-                    type="button"
-                    class="btn btn-outline-warning mr-auto"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <a
-                    href="https://btm-githubfinder.netlify.app/"
-                    target="blank"
-                    class="btn btn-outline-light"
-                    >Link</a
-                  >
-                  <a
-                    href="https://github.com/bytymo/github-finder"
-                    target="blank"
-                    class="btn btn-outline-light"
-                    >Github</a
-                  >
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Project 2 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
             <div
               class="card modalCard"
               data-toggle="modal"
@@ -321,120 +321,121 @@
                 </h5>
               </div>
             </div>
-          </div>
-          <!-- Project 2 Modal -->
-          <div
-            class="modal fade"
-            id="contactKeeperModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="contactKeeper"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content bg-light">
-                <div class="modal-header bg-dark">
-                  <h5 class="modal-title text-light" id="contactKeeper">
-                    CONTACT KEEPER
-                  </h5>
-                  <button
-                    type="button"
-                    class="close text-light"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body row">
-                  <img
-                    src="./images/contact-keeper.jpg"
-                    alt="contact keeper screenshot"
-                    class="w-100 m-2 col-12"
-                  />
-                  <!-- Tech Stack -->
-                  <div class="stack col-12 justify-content-end m-2">
-                    <img
-                      src="./images/heroku.png"
-                      alt="heroku logo"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/git.png"
-                      alt="git logo"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/bootstrap.png"
-                      alt="bootstrap logo"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/node-js.png"
-                      alt="node js logo"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/react-native.png"
-                      alt="react native logo"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/express-js.png"
-                      alt="express JS logo"
-                      height="48"
-                      class="float-right mr-1"
-                    />
-                    <img
-                      src="./images/mongodb.png"
-                      alt="mongoDB logo"
-                      class="float-right mr-1"
-                    />
+            <!-- Project 2 Modal -->
+            <div
+              class="modal fade"
+              id="contactKeeperModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="contactKeeper"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bg-light">
+                  <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-light" id="contactKeeper">
+                      CONTACT KEEPER
+                    </h5>
+                    <button
+                      type="button"
+                      class="close text-light"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
-                  <div class="col-12 text-justify text-dark">
-                    Developed a full-stack web app that allows the user to log
-                    in to their own account and create, view, edit, and delete
-                    contacts.
-                    <ul class="pl-4">
-                      <li>
-                        Constructed a custom API to interact with React. JSON
-                        Web Tokens (JWT) and ProtectedRoute utilized to protect
-                        user data.
-                      </li>
-                      <li>
-                        Validates user information to prevent duplicate user
-                        emails, and sends an alert for duplicate registration,
-                        as well as for incorrect or missing login information.
-                      </li>
-                    </ul>
+                  <div class="modal-body row">
+                    <img
+                      src="./images/contact-keeper.jpg"
+                      alt="contact keeper screenshot"
+                      class="w-100 m-2 col-12"
+                    />
+                    <!-- Tech Stack -->
+                    <div class="stack col-12 justify-content-end m-2">
+                      <img
+                        src="./images/heroku.png"
+                        alt="heroku logo"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/git.png"
+                        alt="git logo"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/bootstrap.png"
+                        alt="bootstrap logo"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/node-js.png"
+                        alt="node js logo"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/react-native.png"
+                        alt="react native logo"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/express-js.png"
+                        alt="express JS logo"
+                        height="48"
+                        class="float-right mr-1"
+                      />
+                      <img
+                        src="./images/mongodb.png"
+                        alt="mongoDB logo"
+                        class="float-right mr-1"
+                      />
+                    </div>
+                    <div class="col-12 text-justify text-dark">
+                      Developed a full-stack web app that allows the user to log
+                      in to their own account and create, view, edit, and delete
+                      contacts.
+                      <ul class="pl-4">
+                        <li>
+                          Constructed a custom API to interact with React. JSON
+                          Web Tokens (JWT) and ProtectedRoute utilized to
+                          protect user data.
+                        </li>
+                        <li>
+                          Validates user information to prevent duplicate user
+                          emails, and sends an alert for duplicate registration,
+                          as well as for incorrect or missing login information.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer bg-dark">
-                  <button
-                    type="button"
-                    class="btn btn-outline-warning mr-auto"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <a
-                    href="https://aqueous-beyond-13220.herokuapp.com/login"
-                    target="blank"
-                    class="btn btn-outline-light"
-                    >Link</a
-                  >
-                  <a
-                    href="https://github.com/bytymo/contact-keeper"
-                    target="blank"
-                    class="btn btn-outline-light"
-                    >Github</a
-                  >
+                  <div class="modal-footer bg-dark">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning mr-auto"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="https://aqueous-beyond-13220.herokuapp.com/login"
+                      target="blank"
+                      class="btn btn-outline-light"
+                      >Link</a
+                    >
+                    <a
+                      href="https://github.com/bytymo/contact-keeper"
+                      target="blank"
+                      class="btn btn-outline-light"
+                      >Github</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- Project 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
             <div
               class="card modalCard"
               data-toggle="modal"
@@ -452,110 +453,111 @@
                 </h5>
               </div>
             </div>
-          </div>
-          <!-- Project 3 Modal -->
-          <div
-            class="modal fade"
-            id="itLoggerModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="itLogger"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content bg-light">
-                <div class="modal-header bg-dark">
-                  <h5 class="modal-title text-light" id="itLogger">
-                    IT LOGGER
-                  </h5>
-                  <button
-                    type="button"
-                    class="close text-light"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body row">
-                  <img
-                    src="./images/it-logger.jpg"
-                    alt="it logger screenshot"
-                    class="w-100 m-2 col-12"
-                  />
-                  <!-- Tech Stack -->
-                  <div class="stack col-12 justify-content-end m-2">
-                    <img
-                      src="./images/react-native.png"
-                      alt="react native logo"
-                      class="float-right mr-1"
-                      height="48"
-                    />
-                    <img
-                      src="./images/node-js.png"
-                      alt="node js logo"
-                      class="float-right mr-1"
-                      height="48"
-                    />
-                    <img
-                      src="./images/materialize.png"
-                      alt="materialize logo"
-                      class="float-right mr-1"
-                      height="48"
-                    />
-                    <img
-                      src="./images/git.png"
-                      alt="git logo"
-                      class="float-right mr-1"
-                      height="48"
-                    />
-                    <img
-                      src="./images/redux.png"
-                      alt="react redux logo"
-                      class="float-right mr-1"
-                      height="48"
-                    />
+            <!-- Project 3 Modal -->
+            <div
+              class="modal fade"
+              id="itLoggerModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="itLogger"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bg-light">
+                  <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-light" id="itLogger">
+                      IT LOGGER
+                    </h5>
+                    <button
+                      type="button"
+                      class="close text-light"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
-                  <div class="col-12 text-justify text-dark">
-                    <p>
-                      Developed a full-stack web app acting as a mock internal
-                      site for an IT department to track logs.
-                    </p>
-                    <ul class="pl-4">
-                      <li>
-                        Implements Redux to manage React state. Makes fetch
-                        requests utilizing JSON Server from local database.
-                      </li>
-                    </ul>
-                    <p class="text-danger">
-                      <strong
-                        >*Does not have a link due to the project using JSON
-                        Server*</strong
-                      >
-                    </p>
+                  <div class="modal-body row">
+                    <img
+                      src="./images/it-logger.jpg"
+                      alt="it logger screenshot"
+                      class="w-100 m-2 col-12"
+                    />
+                    <!-- Tech Stack -->
+                    <div class="stack col-12 justify-content-end m-2">
+                      <img
+                        src="./images/react-native.png"
+                        alt="react native logo"
+                        class="float-right mr-1"
+                        height="48"
+                      />
+                      <img
+                        src="./images/node-js.png"
+                        alt="node js logo"
+                        class="float-right mr-1"
+                        height="48"
+                      />
+                      <img
+                        src="./images/materialize.png"
+                        alt="materialize logo"
+                        class="float-right mr-1"
+                        height="48"
+                      />
+                      <img
+                        src="./images/git.png"
+                        alt="git logo"
+                        class="float-right mr-1"
+                        height="48"
+                      />
+                      <img
+                        src="./images/redux.png"
+                        alt="react redux logo"
+                        class="float-right mr-1"
+                        height="48"
+                      />
+                    </div>
+                    <div class="col-12 text-justify text-dark">
+                      <p>
+                        Developed a full-stack web app acting as a mock internal
+                        site for an IT department to track logs.
+                      </p>
+                      <ul class="pl-4">
+                        <li>
+                          Implements Redux to manage React state. Makes fetch
+                          requests utilizing JSON Server from local database.
+                        </li>
+                      </ul>
+                      <p class="text-danger">
+                        <strong
+                          >*Does not have a link due to the project using JSON
+                          Server*</strong
+                        >
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer bg-dark">
-                  <button
-                    type="button"
-                    class="btn btn-outline-warning mr-auto"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button class="btn btn-outline-light disabled">Link</button>
-                  <a
-                    href="https://github.com/bytymo/it-logger"
-                    target="blank"
-                    class="btn btn-outline-light"
-                    >Github</a
-                  >
+                  <div class="modal-footer bg-dark">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning mr-auto"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button class="btn btn-outline-light disabled">Link</button>
+                    <a
+                      href="https://github.com/bytymo/it-logger"
+                      target="blank"
+                      class="btn btn-outline-light"
+                      >Github</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- Project 4 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
             <div
               class="card modalCard"
               data-toggle="modal"
@@ -634,7 +636,6 @@
               </div>
             </div>
           </div>
-          <!-- End card deck -->
         </div>
       </section>
       <!-- Contact Me -->
