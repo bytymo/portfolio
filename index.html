@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/bm-logo.png" />
-    <!-- <link rel="stylesheet" href="css/newstyle.css" /> -->
-    <!-- <link rel="stylesheet" href="css/utilities.css" />
-    <link
-      rel="stylesheet"
-      href="css/desktop.css"
-      media="screen and (min-width: 813px)"
-    /> -->
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -25,48 +18,67 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <meta
       name="description"
       content="A web app created as a digital portfolio of my work."
     />
-    <link rel="stylesheet" href="css/newstyle.css" />
     <title>Byron Mosley</title>
   </head>
 
   <body class="p-0 m-0">
-    <nav class="navbar navbar-expand-lg fixed-top pt-0 mt-0" id='navbar'>
-      
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg fixed-top pt-0 mt-0" id="navbar">
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="overlay d-none d-lg-block"></div>
-      
+
       <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-        <h1 class="text-light name">
-          ByRon <span class="gold">M</span>osley
-        </h1>
+        <h1 class="text-light name">ByRon <span class="gold">M</span>osley</h1>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()"><a class="nav-link gold" href="#home">Home</a></li>
-          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()"><a class="nav-link gold" href="#about">About</a></li>
-          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()"><a class="nav-link gold" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item pb-2" onclick="removeActive()"><a class="nav-link gold" href="#contact">Contact</a></li>
+          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+            <a class="nav-link gold" href="#home">Home</a>
+          </li>
+          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+            <a class="nav-link gold" href="#about">About</a>
+          </li>
+          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+            <a class="nav-link gold" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item pb-2" onclick="removeActive()">
+            <a class="nav-link gold" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <header id="home" >
-      <video  class="glitch" src='./images/glitch-dark.mp4' muted loop autoPlay playsInline></video>
+    <header id="home">
+      <video
+        class="glitch"
+        src="./images/glitch-dark.mp4"
+        muted
+        loop
+        autoplay
+        playsinline
+      ></video>
       <div class="toggle d-lg-none"></div>
     </header>
-
-    
 
     <main class="text-primary container">
       <!-- About -->
       <section id="about">
+        <h2 class="text-light">Who I am</h2>
+        <hr />
         <article>
-          <h2 class="text-light">Who I am</h2><hr>
           <div class="card-deck text-light">
             <div class="card definition">
               <div class="card-body">
@@ -80,9 +92,10 @@
                 </h6>
                 <p class="card-text">
                   Full Stack Development concerns itself with both the front end
-                  and back end of web development. Using HTML, CSS, and Javascript
-                  for front end development with React, PostrgreSQL, and Express
-                  for back end development, I build fast, efficient websites.
+                  and back end of web development. Using HTML, CSS, and
+                  Javascript for front end development with React, PostrgreSQL,
+                  and Express for back end development, I build fast, efficient
+                  websites.
                 </p>
               </div>
             </div>
@@ -97,15 +110,16 @@
                   >
                 </h6>
                 <p class="card-text">
-                  It is my mission to provide the respect and attention the client
-                  deserves as well as understand the clients needs when designing
-                  the site, while respecting the clients time and budget.
+                  It is my mission to provide the respect and attention the
+                  client deserves as well as understand the clients needs when
+                  designing the site, while respecting the clients time and
+                  budget.
                 </p>
               </div>
             </div>
           </div>
         </article>
-        
+
         <article>
           <h2 class="text-light">About Me</h2>
           <hr />
@@ -126,26 +140,26 @@
               <p>
                 I am a full stack web developer and web designer based out of
                 Phoenix, AZ. I work with the PERN stack, which relies heavily on
-                JavaScript on both the front and back end. I strongly look forward
-                to working in a group of programmers so I may not only learn but
-                reinforce my understanding of code. Whether it be exploring my
-                artistic ability through web design or my critical thinking
-                analysis and testing my logic through web development, I am very
-                excited to connect with people and contribute to the growth of the
-                web.
+                JavaScript on both the front and back end. I strongly look
+                forward to working in a group of programmers so I may not only
+                learn but reinforce my understanding of code. Whether it be
+                exploring my artistic ability through web design or my critical
+                thinking analysis and testing my logic through web development,
+                I am very excited to connect with people and contribute to the
+                growth of the web.
               </p>
-  
+
               <p>
                 Outside of the coding world, I also enjoy creating composite
-                images in Photoshop, going out and taking photos in the city or in
-                the wild, or finding some other artistic avenue to keep me going.
-                I love discovering new musicians and genres, would love to be
-                fluent in either the guitar or drums, and aspire to be a polyglot
-                (being multilingual for the fun of it). The top three languages at
-                this moment would be Japanese, German, and Spanish (in no
-                particular order).
+                images in Photoshop, going out and taking photos in the city or
+                in the wild, or finding some other artistic avenue to keep me
+                going. I love discovering new musicians and genres, would love
+                to be fluent in either the guitar or drums, and aspire to be a
+                polyglot (being multilingual for the fun of it). The top three
+                languages at this moment would be Japanese, German, and Spanish
+                (in no particular order).
               </p>
-  
+
               <p>
                 Some of the top items on my bucket list include skydiving (and
                 eventually banzai skydiving), scuba diving a coral reef,
@@ -162,36 +176,73 @@
         <h2 class="text-light">Portfolio</h2>
         <hr />
 
-        <!-- TODO Make cards into modals -->
         <div class="card-deck row">
           <!-- Project 1 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card modalCard" data-toggle="modal" data-target="#githubFinderModal">
-                <img src="images/project1.jpg"
-                height='300px'
-                object-fit='contain'
+            <div
+              class="card modalCard"
+              data-toggle="modal"
+              data-target="#githubFinderModal"
+            >
+              <img
+                src="images/project1.jpg"
+                height="300"
                 alt="statue"
-                class="card-img-top">
-                <div class="card-img-overlay d-flex mx-0 px-0 pb-0"><h5 class="card-text w-100 gold align-self-end mx-0 py-1">GitHub Finder</h5></div>
+                class="card-img-top"
+              />
+              <div class="card-img-overlay d-flex mx-0 px-0 pb-0">
+                <h5 class="card-text w-100 gold align-self-end mx-0 py-1">
+                  GitHub Finder
+                </h5>
               </div>
+            </div>
           </div>
           <!-- Project 1: Modal -->
-          <div class="modal fade" id="githubFinderModal" tabindex="-1" role="dialog" aria-labelledby="githubFinderModalTitle" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="githubFinderModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="githubFinder"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content bg-light">
                 <div class="modal-header bg-dark">
-                  <h5 class="modal-title text-light" id="exampleModalLongTitle">GITHUB FINDER</h5>
-                  <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title text-light" id="githubFinder">
+                    GITHUB FINDER
+                  </h5>
+                  <button
+                    type="button"
+                    class="close text-light"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <img src="./images/github-finder.png" alt="github finder screenshot" width="100%">
+                <div class="modal-body row">
+                  <img
+                    src="./images/github-finder.png"
+                    alt="github finder screenshot"
+                    class="w-100 m-2 col-12"
+                  />
+
                   <!-- Tech Stack -->
-                  <div class="stack w-100 d-block">
+                  <div class="stack col-12 justify-content-end m-2">
                     <img
-                      src="./images/react-native.png"
-                      alt="react native logo"
+                      src="./images/netlify.png"
+                      alt="netlify logo"
+                      class="float-right mr-1"
+                    />
+                    <img
+                      src="./images/git.png"
+                      alt="git logo"
+                      class="float-right"
+                    />
+                    <img
+                      src="./images/bootstrap.png"
+                      alt="bootstrap logo"
                       class="float-right mr-1"
                     />
                     <img
@@ -200,21 +251,52 @@
                       class="float-right mr-1"
                     />
                     <img
-                      src="./images/bootstrap.png"
-                      alt="bootstrap logo"
+                      src="./images/react-native.png"
+                      alt="react native logo"
                       class="float-right mr-1"
                     />
-                    <img
-                      src="./images/git.png"
-                      alt="git logo"
-                      class="float-right"
-                    />
+                  </div>
+                  <div class="col-12 text-justify text-dark">
+                    <p>
+                      Developed a front-end web app that allows the user to
+                      search for GitHub profiles based on their username.
+                    </p>
+                    <ul class="pl-4">
+                      <li>
+                        Built with functional components such as “useState” and
+                        “useEffect”. Uses app level state with Context API,
+                        useReducer hook, and useContext hook
+                      </li>
+                      <li>
+                        Uses GitHub API to fetch GitHub profiles while limiting
+                        the number of profiles to thirty on the page. Each
+                        profile page pulls info (i.e. the user’s display name,
+                        bio, username, etc.) as well as data such as number of
+                        followers and public repos
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div class="modal-footer bg-dark">
-                  <button type="button" class="btn btn-outline-warning mr-auto" data-dismiss="modal">Close</button>
-                  <a href="https://btm-githubfinder.netlify.app/" target="blank" class="btn btn-outline-light">Link</a>
-                  <a href="https://github.com/bytymo/github-finder" target="blank" class="btn btn-outline-light">Github</a>
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning mr-auto"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <a
+                    href="https://btm-githubfinder.netlify.app/"
+                    target="blank"
+                    class="btn btn-outline-light"
+                    >Link</a
+                  >
+                  <a
+                    href="https://github.com/bytymo/github-finder"
+                    target="blank"
+                    class="btn btn-outline-light"
+                    >Github</a
+                  >
                 </div>
               </div>
             </div>
@@ -222,37 +304,64 @@
 
           <!-- Project 2 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="card modalCard" data-toggle="modal" data-target="#contactKeeperModal">
-                <img src="images/project2.jpg"
-                height='300px'
-                object-fit='contain'
+            <div
+              class="card modalCard"
+              data-toggle="modal"
+              data-target="#contactKeeperModal"
+            >
+              <img
+                src="images/project2.jpg"
+                height="300"
                 alt="statue"
-                class="card-img-top">
-                <div class="card-img-overlay d-flex mx-0 px-0 pb-0"><h5 class="card-text w-100 gold align-self-end mx-0 py-1">Contact Keeper</h5></div>
+                class="card-img-top"
+              />
+              <div class="card-img-overlay d-flex mx-0 px-0 pb-0">
+                <h5 class="card-text w-100 gold align-self-end mx-0 py-1">
+                  Contact Keeper
+                </h5>
               </div>
+            </div>
           </div>
           <!-- Project 2 Modal -->
-          <div class="modal fade" id="contactKeeperModal" tabindex="-1" role="dialog" aria-labelledby="contactKeeperTitleModal" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="contactKeeperModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="contactKeeper"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content bg-light">
                 <div class="modal-header bg-dark">
-                  <h5 class="modal-title text-light" id="exampleModalLongTitle">CONTACT KEEPER</h5>
-                  <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title text-light" id="contactKeeper">
+                    CONTACT KEEPER
+                  </h5>
+                  <button
+                    type="button"
+                    class="close text-light"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <img src="./images/contact-keeper.jpg" alt="contact keeper screenshot" width="100%">
+                <div class="modal-body row">
+                  <img
+                    src="./images/contact-keeper.jpg"
+                    alt="contact keeper screenshot"
+                    class="w-100 m-2 col-12"
+                  />
                   <!-- Tech Stack -->
-                  <div class="stack w-100 d-block">
+                  <div class="stack col-12 justify-content-end m-2">
                     <img
-                      src="./images/react-native.png"
-                      alt="react native logo"
+                      src="./images/heroku.png"
+                      alt="heroku logo"
                       class="float-right mr-1"
                     />
                     <img
-                      src="./images/node-js.png"
-                      alt="node js logo"
+                      src="./images/git.png"
+                      alt="git logo"
                       class="float-right mr-1"
                     />
                     <img
@@ -261,127 +370,283 @@
                       class="float-right mr-1"
                     />
                     <img
-                      src="./images/git.png"
-                      alt="git logo"
-                      class="float-right"
+                      src="./images/node-js.png"
+                      alt="node js logo"
+                      class="float-right mr-1"
                     />
-                    <!-- TODO ADD: Express, MongoDB, Heroku -->
+                    <img
+                      src="./images/react-native.png"
+                      alt="react native logo"
+                      class="float-right mr-1"
+                    />
+                    <img
+                      src="./images/express-js.png"
+                      alt="express JS logo"
+                      height="48"
+                      class="float-right mr-1"
+                    />
+                    <img
+                      src="./images/mongodb.png"
+                      alt="mongoDB logo"
+                      class="float-right mr-1"
+                    />
+                  </div>
+                  <div class="col-12 text-justify text-dark">
+                    Developed a full-stack web app that allows the user to log
+                    in to their own account and create, view, edit, and delete
+                    contacts.
+                    <ul class="pl-4">
+                      <li>
+                        Constructed a custom API to interact with React. JSON
+                        Web Tokens (JWT) and ProtectedRoute utilized to protect
+                        user data.
+                      </li>
+                      <li>
+                        Validates user information to prevent duplicate user
+                        emails, and sends an alert for duplicate registration,
+                        as well as for incorrect or missing login information.
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div class="modal-footer bg-dark">
-                  <button type="button" class="btn btn-outline-warning mr-auto" data-dismiss="modal">Close</button>
-                  <a href="https://aqueous-beyond-13220.herokuapp.com/login" target="blank" class="btn btn-outline-light">Link</a>
-                  <a href="https://github.com/bytymo/contact-keeper" target="blank" class="btn btn-outline-light">Github</a>
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning mr-auto"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <a
+                    href="https://aqueous-beyond-13220.herokuapp.com/login"
+                    target="blank"
+                    class="btn btn-outline-light"
+                    >Link</a
+                  >
+                  <a
+                    href="https://github.com/bytymo/contact-keeper"
+                    target="blank"
+                    class="btn btn-outline-light"
+                    >Github</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <!-- Project 3 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card modalCard" data-toggle="modal" data-target="#itLoggerModal">
-                <img src="images/project3.jpg"
-                height='300px'
-                object-fit='contain'
+            <div
+              class="card modalCard"
+              data-toggle="modal"
+              data-target="#itLoggerModal"
+            >
+              <img
+                src="images/project3.jpg"
+                height="300"
                 alt="statue"
-                class="card-img-top">
-                <div class="card-img-overlay d-flex mx-0 px-0 pb-0"><h5 class="card-text w-100 gold align-self-end mx-0 py-1">IT Logger</h5></div>
+                class="card-img-top"
+              />
+              <div class="card-img-overlay d-flex mx-0 px-0 pb-0">
+                <h5 class="card-text w-100 gold align-self-end mx-0 py-1">
+                  IT Logger
+                </h5>
               </div>
+            </div>
           </div>
           <!-- Project 3 Modal -->
-          <div class="modal fade" id="itLoggerModal" tabindex="-1" role="dialog" aria-labelledby="itLoggerModalTitle" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="itLoggerModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="itLogger"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content bg-light">
                 <div class="modal-header bg-dark">
-                  <h5 class="modal-title text-light" id="exampleModalLongTitle">IT LOGGER</h5>
-                  <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title text-light" id="itLogger">
+                    IT LOGGER
+                  </h5>
+                  <button
+                    type="button"
+                    class="close text-light"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <img src="./images/it-logger.jpg" alt="it logger screenshot" width="100%">
+                <div class="modal-body row">
+                  <img
+                    src="./images/it-logger.jpg"
+                    alt="it logger screenshot"
+                    class="w-100 m-2 col-12"
+                  />
                   <!-- Tech Stack -->
-                  <div class="stack w-100 d-block">
+                  <div class="stack col-12 justify-content-end m-2">
                     <img
                       src="./images/react-native.png"
                       alt="react native logo"
                       class="float-right mr-1"
+                      height="48"
                     />
                     <img
                       src="./images/node-js.png"
                       alt="node js logo"
                       class="float-right mr-1"
+                      height="48"
                     />
-                    <!-- TODO: Change to Materialize -->
                     <img
-                      src="./images/bootstrap.png"
-                      alt="bootstrap logo"
+                      src="./images/materialize.png"
+                      alt="materialize logo"
                       class="float-right mr-1"
-                    /> 
+                      height="48"
+                    />
                     <img
                       src="./images/git.png"
                       alt="git logo"
-                      class="float-right"
+                      class="float-right mr-1"
+                      height="48"
                     />
-                    <!-- TODO ADD: Redux (if applicable) -->
+                    <img
+                      src="./images/redux.png"
+                      alt="react redux logo"
+                      class="float-right mr-1"
+                      height="48"
+                    />
+                  </div>
+                  <div class="col-12 text-justify text-dark">
+                    <p>
+                      Developed a full-stack web app acting as a mock internal
+                      site for an IT department to track logs.
+                    </p>
+                    <ul class="pl-4">
+                      <li>
+                        Implements Redux to manage React state. Makes fetch
+                        requests utilizing JSON Server from local database.
+                      </li>
+                    </ul>
+                    <p class="text-danger">
+                      <strong
+                        >*Does not have a link due to the project using JSON
+                        Server*</strong
+                      >
+                    </p>
                   </div>
                 </div>
                 <div class="modal-footer bg-dark">
-                  <button type="button" class="btn btn-outline-warning mr-auto" data-dismiss="modal">Close</button>
-                  <a href="https://" target="blank" class="btn btn-outline-light disabled">Link</a>
-                  <a href="https://github.com/bytymo/it-logger" target="blank" class="btn btn-outline-light">Github</a>
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning mr-auto"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button class="btn btn-outline-light disabled">Link</button>
+                  <a
+                    href="https://github.com/bytymo/it-logger"
+                    target="blank"
+                    class="btn btn-outline-light"
+                    >Github</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <!-- Project 4 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="card modalCard" data-toggle="modal" data-target="#project4Modal">
-                <img src="images/project4.jpg"
-                height='300px'
-                object-fit='contain'
+            <div
+              class="card modalCard"
+              data-toggle="modal"
+              data-target="#project4Modal"
+            >
+              <img
+                src="images/project4.jpg"
+                height="300"
                 alt="statue"
-                class="card-img-top">
-                <div class="card-img-overlay d-flex mx-0 px-0 pb-0"><h5 class="card-text w-100 gold align-self-end mx-0 py-1">TBD</h5></div>
+                class="card-img-top"
+              />
+              <div class="card-img-overlay d-flex mx-0 px-0 pb-0">
+                <h5 class="card-text w-100 gold align-self-end mx-0 py-1">
+                  TBD
+                </h5>
               </div>
+            </div>
           </div>
           <!-- Project 4 Modal -->
-          <div class="modal fade" id="project4Modal" tabindex="-1" role="dialog" aria-labelledby="project4ModalTitle" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="project4Modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="under-construction"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content bg-light">
                 <div class="modal-header bg-dark">
-                  <h5 class="modal-title text-light" id="exampleModalLongTitle">UNDER CONSTRUCTION</h5>
-                  <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title text-light" id="under-construction">
+                    UNDER CONSTRUCTION
+                  </h5>
+                  <button
+                    type="button"
+                    class="close text-light"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <img src="./images/underConstruction.jpg" alt="github finder screenshot" width="100%">
+                <div class="modal-body row">
+                  <img
+                    src="./images/underConstruction.jpg"
+                    alt="github finder screenshot"
+                    class="w-100 m-2 col-12"
+                  />
                   <!-- Tech Stack -->
-                  <!-- <div class="stack w-100 d-block">
+                  <!-- <div class="stack col-12 justify-content-end m-2">
                     <img
-                      src="./images/git.png"
-                      alt="git logo"
-                      class="float-right"
+                      src="./images/react-native.png"
+                      alt="react native logo"
+                      class="float-right mr-1"
+                      height="48"
                     />
                   </div> -->
+                  <div class="col-12 text-justify text-dark">
+                    <p>
+                      Thank you for your patience while I finalize a project
+                      worth presenting on this site.
+                    </p>
+                  </div>
                 </div>
                 <div class="modal-footer bg-dark">
-                  <button type="button" class="btn btn-outline-warning mr-auto" data-dismiss="modal">Close</button>
-                  <a href="https://" target="blank" class="btn btn-outline-light disabled">Link</a>
-                  <a href="https://" target="blank" class="btn btn-outline-light disabled">Github</a>
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning mr-auto"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button class="btn btn-outline-light disabled">Link</button>
+                  <button class="btn btn-outline-light disabled">Github</button>
                 </div>
               </div>
             </div>
           </div>
           <!-- End card deck -->
         </div>
-
+      </section>
       <!-- Contact Me -->
       <section id="contact" class="flex-columns">
         <h2 class="text-light">Contact Me</h2>
         <hr />
         <div class="row" id="contactForm">
-          <form action="" class="col-md-6 p-3">
+          <form
+            action="https://formspree.io/f/mpzobqor"
+            method="POST"
+            class="col-md-6 p-3"
+          >
             <h6 class="text-left text-light">
               Looking for a quote? Wanting to collaborate? Or simply wishing to
               say hello? Fill out the form below!
@@ -413,10 +678,7 @@
                 placeholder="Message"
               ></textarea>
             </div>
-            <button
-              type="submit"
-              class="btn btn-outline-warning float-left"
-            >
+            <button type="submit" class="btn btn-outline-warning float-left">
               Submit
             </button>
           </form>
@@ -425,15 +687,15 @@
         <div class="card-group">
           <!-- Phone -->
           <div class="card contact-cards">
-            <a href="tel:+15203443681" class='card-body contact-card'>
+            <a href="tel:+15203443681" class="card-body contact-card">
               <i class="fas fa-phone-alt card-title"></i>
-              <p class='card-text'>(520) 344-3681</p>
+              <p class="card-text">(520) 344-3681</p>
             </a>
           </div>
 
           <!-- Email -->
           <div class="card contact-cards">
-            <a href="mailto:mosleyb91@gmail.com" class='card-body contact-card'>
+            <a href="mailto:mosleyb91@gmail.com" class="card-body contact-card">
               <i class="fas fa-envelope card-title"></i>
               <p class="card-text">mosleyb91@gmail.com</p>
             </a>
@@ -441,7 +703,11 @@
 
           <!-- Location -->
           <div class="card contact-cards">
-            <a href="https://www.google.com/maps/dir//Phoenix,+AZ/@33.6054149,-112.125051,10z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872b12ed50a179cb:0x8c69c7f8354a1bac!3e0?hl=en" target="blank" class='card-body contact-card'>
+            <a
+              href="https://www.google.com/maps/dir//Phoenix,+AZ/@33.6054149,-112.125051,10z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872b12ed50a179cb:0x8c69c7f8354a1bac!3e0?hl=en"
+              target="blank"
+              class="card-body contact-card"
+            >
               <i class="fas fa-map-marker-alt card-title"></i>
               <p class="card-text">Phoenix, AZ</p>
             </a>
