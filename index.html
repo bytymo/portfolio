@@ -6,9 +6,9 @@
     <link rel="icon" href="./images/bm-logo.png" />
     <!-- Bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
     <!-- Font Awesome -->
@@ -28,11 +28,40 @@
 
   <body class="p-0 m-0">
     <nav class="navbar navbar-expand-lg fixed-top pt-0 mt-0" id="navbar">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarPortfolio"
+          aria-controls="navbarPortfolio"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="overlay d-none d-lg-block"></div>
+        <div class="collapse navbar-collapse menu" id="navbarPortfolio">
+          <h1 class="text-light name">
+            ByRon <span class="gold">M</span>osley
+          </h1>
+          <!-- TODO: get removeActive to work, close menu when clicking any menu item or clicking outside of mobile nav screen -->
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link gold" aria-current="page" href="#home">Home</a>
+            <a class="nav-link gold" href="#about">About</a>
+            <a class="nav-link gold" href="#portfolio">Portfolio</a>
+            <a class="nav-link gold" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-lg fixed-top pt-0 mt-0" id="navbar">
       <button
         class="navbar-toggler ml-auto"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarSupportedContent"
+        data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -44,14 +73,14 @@
 
       <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
         <h1 class="text-light name">ByRon <span class="gold">M</span>osley</h1>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item pb-2 me-lg-4" onclick="removeActive()">
             <a class="nav-link gold" href="#home">Home</a>
           </li>
-          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+          <li class="nav-item pb-2 me-lg-4" onclick="removeActive()">
             <a class="nav-link gold" href="#about">About</a>
           </li>
-          <li class="nav-item pb-2 mr-lg-4" onclick="removeActive()">
+          <li class="nav-item pb-2 me-lg-4" onclick="removeActive()">
             <a class="nav-link gold" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item pb-2" onclick="removeActive()">
@@ -59,7 +88,7 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
     <header id="home">
       <video
@@ -79,42 +108,46 @@
         <h2 class="text-light">Who I am</h2>
         <hr />
         <article>
-          <div class="card-deck text-light">
-            <div class="card definition">
-              <div class="card-body">
-                <h4 class="card-title">de·vel·op·er</h4>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  /dəˈveləpər/<br /><em
-                    >a person or thing that develops or innovates; a person or
-                    company that creates new products, especially software, or
-                    devices.</em
-                  >
-                </h6>
-                <p class="card-text">
-                  Full Stack Development concerns itself with both the front end
-                  and back end of web development. Using HTML, CSS, and
-                  Javascript for front end development with React, PostrgreSQL,
-                  and Express for back end development, I build fast, efficient
-                  websites.
-                </p>
+          <div class="row row-cols-1 row-cols-md-2 text-light">
+            <div class="col mb-2">
+              <div class="card h-100 definition">
+                <div class="card-body">
+                  <h4 class="card-title">de·vel·op·er</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    /dəˈveləpər/<br /><em
+                      >a person or thing that develops or innovates; a person or
+                      company that creates new products, especially software, or
+                      devices.</em
+                    >
+                  </h6>
+                  <p class="card-text">
+                    Full Stack Development concerns itself with both the front
+                    end and back end of web development. Using HTML, CSS, and
+                    Javascript for front end development with React,
+                    PostrgreSQL, and Express for back end development, I build
+                    fast, efficient websites.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="card definition">
-              <div class="card-body">
-                <h4 class="card-title">de·sign·er</h4>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  /dəˈzīnər/<br /><em
-                    >a person who plans the form, look, or workings of something
-                    before its being made or built, typically by drawing it in
-                    detail.</em
-                  >
-                </h6>
-                <p class="card-text">
-                  It is my mission to provide the respect and attention the
-                  client deserves as well as understand the clients needs when
-                  designing the site, while respecting the clients time and
-                  budget.
-                </p>
+            <div class="col mb-2">
+              <div class="card h-100 definition">
+                <div class="card-body">
+                  <h4 class="card-title">de·sign·er</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    /dəˈzīnər/<br /><em
+                      >a person who plans the form, look, or workings of
+                      something before its being made or built, typically by
+                      drawing it in detail.</em
+                    >
+                  </h6>
+                  <p class="card-text">
+                    It is my mission to provide the respect and attention the
+                    client deserves as well as understand the clients needs when
+                    designing the site, while respecting the clients time and
+                    budget.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -172,17 +205,18 @@
       </section>
 
       <!-- Portfolio -->
+      <!-- TODO: format screenshots to resize properly -->
       <section id="portfolio">
         <h2 class="text-light">Portfolio</h2>
         <hr />
 
-        <div class="card-deck row">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gap-0">
           <!-- Project 1 -->
-          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <div class="mb-3">
             <div
               class="card modalCard"
-              data-toggle="modal"
-              data-target="#githubFinderModal"
+              data-bs-toggle="modal"
+              data-bs-target="#githubFinderModal"
             >
               <img
                 src="images/project1.jpg"
@@ -201,11 +235,10 @@
               class="modal fade"
               id="githubFinderModal"
               tabindex="-1"
-              role="dialog"
               aria-labelledby="githubFinder"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-light">
                   <div class="modal-header bg-dark">
                     <h5 class="modal-title text-light" id="githubFinder">
@@ -213,26 +246,24 @@
                     </h5>
                     <button
                       type="button"
-                      class="close text-light"
-                      data-dismiss="modal"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="modal"
                       aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                    ></button>
                   </div>
-                  <div class="modal-body row">
+                  <div class="modal-body row-cols-1">
                     <img
                       src="./images/github-finder.png"
                       alt="github finder screenshot"
-                      class="img-fluid col-12"
+                      class="img-fluid"
                     />
 
                     <!-- Tech Stack -->
-                    <div class="stack col-12 justify-content-end m-2">
+                    <div class="stack text-end my-2">
                       <img
                         src="./images/netlify.png"
                         alt="netlify logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/git.png"
@@ -242,25 +273,25 @@
                       <img
                         src="./images/bootstrap.png"
                         alt="bootstrap logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/node-js.png"
                         alt="node js logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/react-native.png"
                         alt="react native logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                     </div>
-                    <div class="col-12 text-justify text-dark">
+                    <div class="text-justify text-dark">
                       <p>
                         Developed a front-end web app that allows the user to
                         search for GitHub profiles based on their username.
                       </p>
-                      <ul class="pl-4">
+                      <ul class="ps-4">
                         <li>
                           Built with functional components such as “useState”
                           and “useEffect”. Uses app level state with Context
@@ -279,8 +310,8 @@
                   <div class="modal-footer bg-dark">
                     <button
                       type="button"
-                      class="btn btn-outline-warning mr-auto"
-                      data-dismiss="modal"
+                      class="btn btn-outline-warning me-auto"
+                      data-bs-dismiss="modal"
                     >
                       Close
                     </button>
@@ -303,11 +334,11 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <div class="mb-3">
             <div
               class="card modalCard"
-              data-toggle="modal"
-              data-target="#contactKeeperModal"
+              data-bs-toggle="modal"
+              data-bs-target="#contactKeeperModal"
             >
               <img
                 src="images/project2.jpg"
@@ -330,7 +361,7 @@
               aria-labelledby="contactKeeper"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-light">
                   <div class="modal-header bg-dark">
                     <h5 class="modal-title text-light" id="contactKeeper">
@@ -338,63 +369,64 @@
                     </h5>
                     <button
                       type="button"
-                      class="close text-light"
-                      data-dismiss="modal"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="modal"
                       aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                    ></button>
                   </div>
-                  <div class="modal-body row">
+                  <div class="modal-body row-cols-1">
                     <img
                       src="./images/contact-keeper.jpg"
                       alt="contact keeper screenshot"
                       class="img-fluid col-12"
                     />
                     <!-- Tech Stack -->
-                    <div class="stack col-12 justify-content-end m-2">
+                    <div class="stack text-end my-2">
                       <img
                         src="./images/heroku.png"
                         alt="heroku logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/git.png"
                         alt="git logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/bootstrap.png"
                         alt="bootstrap logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/node-js.png"
                         alt="node js logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/react-native.png"
                         alt="react native logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/express-js.png"
                         alt="express JS logo"
                         height="48"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                       <img
                         src="./images/mongodb.png"
                         alt="mongoDB logo"
-                        class="float-right mr-1"
+                        class="float-right"
                       />
                     </div>
                     <div class="col-12 text-justify text-dark">
-                      Developed a full-stack web app that allows the user to log
-                      in to their own account and create, view, edit, and delete
-                      contacts.
-                      <ul class="pl-4">
+                      <p>
+                        Developed a full-stack web app that allows the user to
+                        log in to their own account and create, view, edit, and
+                        delete contacts.
+                      </p>
+
+                      <ul class="ps-4">
                         <li>
                           Constructed a custom API to interact with React. JSON
                           Web Tokens (JWT) and ProtectedRoute utilized to
@@ -411,8 +443,8 @@
                   <div class="modal-footer bg-dark">
                     <button
                       type="button"
-                      class="btn btn-outline-warning mr-auto"
-                      data-dismiss="modal"
+                      class="btn btn-outline-warning me-auto"
+                      data-bs-dismiss="modal"
                     >
                       Close
                     </button>
@@ -435,11 +467,11 @@
           </div>
 
           <!-- Project 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <div class="mb-3">
             <div
               class="card modalCard"
-              data-toggle="modal"
-              data-target="#itLoggerModal"
+              data-bs-toggle="modal"
+              data-bs-target="#itLoggerModal"
             >
               <img
                 src="images/project3.jpg"
@@ -462,7 +494,7 @@
               aria-labelledby="itLogger"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-light">
                   <div class="modal-header bg-dark">
                     <h5 class="modal-title text-light" id="itLogger">
@@ -470,49 +502,47 @@
                     </h5>
                     <button
                       type="button"
-                      class="close text-light"
-                      data-dismiss="modal"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="modal"
                       aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                    ></button>
                   </div>
-                  <div class="modal-body row">
+                  <div class="modal-body row-cols-1">
                     <img
                       src="./images/it-logger.jpg"
                       alt="it logger screenshot"
                       class="img-fluid col-12"
                     />
                     <!-- Tech Stack -->
-                    <div class="stack col-12 justify-content-end m-2">
+                    <div class="stack text-end my-2">
                       <img
                         src="./images/react-native.png"
                         alt="react native logo"
-                        class="float-right mr-1"
+                        class="float-right"
                         height="48"
                       />
                       <img
                         src="./images/node-js.png"
                         alt="node js logo"
-                        class="float-right mr-1"
+                        class="float-right"
                         height="48"
                       />
                       <img
                         src="./images/materialize.png"
                         alt="materialize logo"
-                        class="float-right mr-1"
+                        class="float-right"
                         height="48"
                       />
                       <img
                         src="./images/git.png"
                         alt="git logo"
-                        class="float-right mr-1"
+                        class="float-right"
                         height="48"
                       />
                       <img
                         src="./images/redux.png"
                         alt="react redux logo"
-                        class="float-right mr-1"
+                        class="float-right"
                         height="48"
                       />
                     </div>
@@ -521,7 +551,7 @@
                         Developed a full-stack web app acting as a mock internal
                         site for an IT department to track logs.
                       </p>
-                      <ul class="pl-4">
+                      <ul class="ps-4">
                         <li>
                           Implements Redux to manage React state. Makes fetch
                           requests utilizing JSON Server from local database.
@@ -538,8 +568,8 @@
                   <div class="modal-footer bg-dark">
                     <button
                       type="button"
-                      class="btn btn-outline-warning mr-auto"
-                      data-dismiss="modal"
+                      class="btn btn-outline-warning me-auto"
+                      data-bs-dismiss="modal"
                     >
                       Close
                     </button>
@@ -557,11 +587,11 @@
           </div>
 
           <!-- Project 4 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="mb-3">
             <div
               class="card modalCard"
-              data-toggle="modal"
-              data-target="#project4Modal"
+              data-bs-toggle="modal"
+              data-bs-target="#project4Modal"
             >
               <img
                 src="images/project4.jpg"
@@ -584,7 +614,7 @@
               aria-labelledby="under-construction"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-light">
                   <div class="modal-header bg-dark">
                     <h5 class="modal-title text-light" id="under-construction">
@@ -592,25 +622,23 @@
                     </h5>
                     <button
                       type="button"
-                      class="close text-light"
-                      data-dismiss="modal"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="modal"
                       aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                    ></button>
                   </div>
-                  <div class="modal-body row">
+                  <div class="modal-body row-cols-1">
                     <img
                       src="./images/underConstruction.jpg"
                       alt="github finder screenshot"
-                      class="img-fluid col-12"
+                      class="ratio ratio-16x9 col-12"
                     />
                     <!-- Tech Stack -->
-                    <!-- <div class="stack col-12 justify-content-end m-2">
+                    <!-- <div class="stack text-end my-2">
                     <img
                       src="./images/react-native.png"
                       alt="react native logo"
-                      class="float-right mr-1"
+                      class="float-right"
                       height="48"
                     />
                   </div> -->
@@ -624,8 +652,8 @@
                   <div class="modal-footer bg-dark">
                     <button
                       type="button"
-                      class="btn btn-outline-warning mr-auto"
-                      data-dismiss="modal"
+                      class="btn btn-outline-warning me-auto"
+                      data-bs-dismiss="modal"
                     >
                       Close
                     </button>
@@ -648,13 +676,13 @@
           <form
             action="https://formspree.io/f/mpzobqor"
             method="POST"
-            class="col-md-6 p-3"
+            class="col-md-6 d-grid gap-3 m-2"
           >
             <h6 class="text-left text-light">
               Looking for a quote? Wanting to collaborate? Or simply wishing to
               say hello? Fill out the form below!
             </h6>
-            <div class="form-group">
+            <div class="row mx-0">
               <input
                 class="form-control"
                 type="text"
@@ -663,7 +691,7 @@
                 placeholder="Name"
               />
             </div>
-            <div class="form-group">
+            <div class="row mx-0">
               <input
                 class="form-control"
                 type="email"
@@ -672,7 +700,7 @@
                 placeholder="Email"
               />
             </div>
-            <div class="form-group">
+            <div class="row mx-0">
               <textarea
                 class="form-control"
                 name="message"
@@ -681,9 +709,14 @@
                 placeholder="Message"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-outline-warning float-left">
-              Submit
-            </button>
+            <div class="submitBtn d-grid d-lg-block">
+              <button
+                type="submit"
+                class="btn btn-outline-warning float-lg-start"
+              >
+                Submit
+              </button>
+            </div>
           </form>
         </div>
         <!-- Contact Icons -->
@@ -725,7 +758,7 @@
       <div>
         <!-- GitHub -->
         <a
-          class="icon mr-4"
+          class="icon me-4"
           href="https://github.com/bytymo"
           target="_blank"
           rel="noopener noreferrer"
@@ -733,7 +766,7 @@
         ></a>
         <!-- LinkedIn -->
         <a
-          class="icon mr-4"
+          class="icon me-4"
           href="https://www.linkedin.com/in/byron-mosley/"
           target="_blank"
           rel="noopener noreferrer"
@@ -748,24 +781,14 @@
           ><i class="fab fa-spotify icon"></i
         ></a>
       </div>
-      <p class="small mb-0 py-2">
-        &copy; Copyright Byron Mosley 2021. All Rights Reserved.
+      <p class="mb-0 py-2">
+        <small>&copy; Copyright Byron Mosley 2021. All Rights Reserved.</small>
       </p>
     </footer>
     <!-- Bootstrap JS scripts -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
     <!-- Custom JS -->

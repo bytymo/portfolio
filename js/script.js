@@ -27,8 +27,7 @@ menuToggle.addEventListener('click', () => {
 
 // Close Hamburger Menu on section click
 
-const selectedSections = document.querySelectorAll('.nav-item')
-
+const selectedSections = document.querySelectorAll('.nav-link')
 selectedSections.forEach((section) => {
   section.addEventListener('click', () => {
     menuToggle.classList.remove('active')

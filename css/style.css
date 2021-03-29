@@ -23,15 +23,15 @@ h2::first-letter {
   color: var(--light-gold);
 }
 
-.nav-item .nav-link.gold {
+.nav-link.gold {
   color: var(--light-gold);
 }
 
-.active .nav-item .nav-link.gold:hover {
+.active.nav-link.gold:hover {
   border-bottom: none;
 }
 
-.nav-item .nav-link.gold:hover {
+.nav-link.gold:hover {
   color: var(--light-gold);
   text-decoration: none;
   border-bottom: 1px solid var(--light-gold);
@@ -82,6 +82,11 @@ hr {
   );
 }
 
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Navbar */
 .navbar {
   z-index: 2;
@@ -97,12 +102,6 @@ hr {
   background-color: rgba(51, 51, 51, 0.8);
   position: absolute;
 }
-
-/* .navbar,
-.show,
-.collapsing {
-  z-index: 5;
-} */
 
 .menu.active {
   display: block;
@@ -172,26 +171,26 @@ header video {
 /* About Me */
 
 /* Portfolio */
-.card-deck .card .card-img-overlay {
+.card .card-img-overlay {
   opacity: 0;
   transition: all 0.6s ease;
 }
 
 @media screen and (max-width: 991px) {
-  .card-deck .card .card-img-overlay {
+  .card .card-img-overlay {
     opacity: 1;
   }
-  .card-deck .card-img-overlay h5 {
+  .card-img-overlay h5 {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
-.card-deck .card:hover .card-img-overlay {
+.card:hover .card-img-overlay {
   opacity: 1;
   cursor: pointer;
 }
 
-.card-deck .card:hover .card-img-overlay h5 {
+.card:hover .card-img-overlay h5 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -223,7 +222,8 @@ textarea {
 }
 
 .contact-card {
-  color: var(--light);
+  color: var(--light-grey);
+  text-decoration: none;
 }
 
 /* Footer */
