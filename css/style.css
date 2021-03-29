@@ -27,14 +27,17 @@ h2::first-letter {
   color: var(--light-gold);
 }
 
-.active.nav-link.gold:hover {
+.nav-link.gold:hover,
+.nav-link.gold:active {
+  color: var(--light-gold);
+  text-decoration: none;
   border-bottom: none;
 }
 
-.nav-link.gold:hover {
-  color: var(--light-gold);
-  text-decoration: none;
-  border-bottom: 1px solid var(--light-gold);
+@media screen and (min-width: 991px) {
+  .nav-link.gold:hover {
+    border-bottom: 1px solid var(--light-gold);
+  }
 }
 
 .bg-gold {
@@ -133,13 +136,7 @@ hr {
 
 .toggle.active {
   background: url(../images/close.png) no-repeat center;
-  background-size: 30px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 100;
   font-size: 25px;
-  padding: 5px 15px;
 }
 
 /* Header */

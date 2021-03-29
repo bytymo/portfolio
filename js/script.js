@@ -1,4 +1,4 @@
-// Fade graphic and nav background
+// Fade graphic and nav background fade in/out
 
 const checkpoint = 500
 
