@@ -27,10 +27,14 @@
   </head>
 
   <body class="p-0 m-0">
-    <nav class="navbar navbar-expand-lg fixed-top pt-0 mt-0" id="navbar">
+    <nav
+      class="navbar navbar-dark navbar-expand-lg fixed-top pt-0 mt-0"
+      id="navbar"
+    >
       <div class="container-fluid">
         <button
-          class="navbar-toggler"
+          id="menu-button"
+          class="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarPortfolio"
@@ -38,14 +42,17 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            data-trigger-icon
+            id="menu-icon"
+            class="navbar-toggler-icon"
+          ></span>
         </button>
         <div class="overlay d-none d-lg-block"></div>
         <div class="collapse navbar-collapse menu" id="navbarPortfolio">
           <h1 class="text-light name">
             ByRon <span class="gold">M</span>osley
           </h1>
-          <!-- TODO: get removeActive to work, close menu when clicking any menu item or clicking outside of mobile nav screen -->
           <div class="navbar-nav ms-auto">
             <a class="nav-link gold" href="#home">Home</a>
             <a class="nav-link gold" href="#about">About</a>
@@ -56,40 +63,6 @@
       </div>
     </nav>
 
-    <!-- <nav class="navbar navbar-expand-lg fixed-top pt-0 mt-0" id="navbar">
-      <button
-        class="navbar-toggler ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="overlay d-none d-lg-block"></div>
-
-      <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-        <h1 class="text-light name">ByRon <span class="gold">M</span>osley</h1>
-        <ul class="navbar-nav d-flex">
-          <li class="nav-item pb-2 me-lg-4" onclick="removeActive()">
-            <a class="nav-link gold" href="#home">Home</a>
-          </li>
-          <li class="nav-item pb-2 me-lg-4" onclick="removeActive()">
-            <a class="nav-link gold" href="#about">About</a>
-          </li>
-          <li class="nav-item pb-2 me-lg-4" onclick="removeActive()">
-            <a class="nav-link gold" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item pb-2" onclick="removeActive()">
-            <a class="nav-link gold" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav> -->
-
     <header id="home">
       <video
         class="glitch"
@@ -99,7 +72,6 @@
         autoplay
         playsinline
       ></video>
-      <div class="toggle d-lg-none"></div>
     </header>
 
     <main class="text-primary container">
@@ -205,7 +177,6 @@
       </section>
 
       <!-- Portfolio -->
-      <!-- TODO: format screenshots to resize properly -->
       <section id="portfolio">
         <h2 class="text-light">Portfolio</h2>
         <hr />
@@ -218,12 +189,21 @@
               data-bs-toggle="modal"
               data-bs-target="#githubFinderModal"
             >
-              <img
-                src="images/project1.jpg"
-                height="300"
-                alt="statue"
-                class="card-img-top"
-              />
+              <div class="image">
+                <img
+                  src="images/project1.jpg"
+                  height="300"
+                  alt="statue"
+                  class="card-img-top"
+                />
+                <img
+                  src="images/github-finder.png"
+                  height="300"
+                  alt="screenshot to github finder project"
+                  class="card-img-top img-hover"
+                />
+              </div>
+
               <div class="card-img-overlay d-flex mx-0 px-0 pb-0">
                 <h5 class="card-text w-100 gold align-self-end mx-0 py-1">
                   GitHub Finder
@@ -340,12 +320,21 @@
               data-bs-toggle="modal"
               data-bs-target="#contactKeeperModal"
             >
-              <img
-                src="images/project2.jpg"
-                height="300"
-                alt="statue"
-                class="card-img-top"
-              />
+              <div class="image">
+                <img
+                  src="images/project2.jpg"
+                  height="300"
+                  alt="statue"
+                  class="card-img-top"
+                />
+                <img
+                  src="images/contact-keeper.jpg"
+                  height="300"
+                  alt="statue"
+                  class="card-img-top img-hover"
+                />
+              </div>
+
               <div class="card-img-overlay d-flex mx-0 px-0 pb-0">
                 <h5 class="card-text w-100 gold align-self-end mx-0 py-1">
                   Contact Keeper
@@ -473,12 +462,20 @@
               data-bs-toggle="modal"
               data-bs-target="#itLoggerModal"
             >
-              <img
-                src="images/project3.jpg"
-                height="300"
-                alt="statue"
-                class="card-img-top"
-              />
+              <div class="image">
+                <img
+                  src="images/project3.jpg"
+                  height="300"
+                  alt="statue"
+                  class="card-img-top"
+                />
+                <img
+                  src="images/it-logger.jpg"
+                  height="300"
+                  alt="statue"
+                  class="card-img-top img-hover"
+                />
+              </div>
               <div class="card-img-overlay d-flex mx-0 px-0 pb-0">
                 <h5 class="card-text w-100 gold align-self-end mx-0 py-1">
                   IT Logger

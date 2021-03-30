@@ -15,22 +15,15 @@ window.addEventListener('scroll', () => {
   document.querySelector('.overlay').style.opacity = navOpacity
 })
 
-// Toggle menu button from hamburger to 'x'
+// Hide mobile menu on click outside of nav
 
-const menuToggle = document.querySelector('.toggle')
-const menu = document.querySelector('.menu')
-
-menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('active')
-  menu.classList.toggle('active')
-})
-
-// Close Hamburger Menu on section click
-
-const selectedSections = document.querySelectorAll('.nav-link')
-selectedSections.forEach((section) => {
-  section.addEventListener('click', () => {
-    menuToggle.classList.remove('active')
-    menu.classList.remove('active')
-  })
+document.addEventListener('click', function (event) {
+  if (event.target.hasAttribute('data-trigger-icon')) return
+  var button = document.getElementById('menu-button')
+  var menu = document.getElementById('navbarPortfolio')
+  if (button.getAttribute('aria-expanded') === 'true') {
+    button.setAttribute('aria-expanded', false)
+    button.classList.add('collapsed')
+    menu.classList.remove('show')
+  }
 })
